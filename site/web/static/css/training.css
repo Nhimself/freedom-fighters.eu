@@ -1,0 +1,148 @@
+/* Training program */
+
+/* General Styles */
+body, h1, h2, p {
+    font-family: Arial, sans-serif;
+}
+
+/* Manual Sections */
+.manual-content {
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 800px;
+}
+
+.manual-content h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #007bff;
+    text-align: center;
+}
+
+.manual-content p {
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* Section Titles */
+.manual-section {
+    margin-bottom: 2rem;
+}
+.manual-section h2 {
+    font-size: 1.5rem;
+    margin: 1.5rem 0 1rem;
+    color: #f0f0f0;
+}
+
+/* Manual Images */
+.manual-image {
+    width: 100%;
+    max-width: 600px;
+    margin: 1rem 0;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive Text for Manual Content */
+@media (max-width: 768px) {
+    .manual-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .manual-content p {
+        font-size: 1rem;
+    }
+
+    .manual-section h2 {
+        font-size: 1.2rem;
+    }
+
+    .manual-image {
+        max-width: 100%;
+    }
+}
+
+/* Parallax Header */
+.parallax {
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 5rem 1rem;
+    color: white;
+    text-align: center;
+}
+
+.header-content {
+    padding-top: 3rem;
+}
+.header-content h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.header-content p {
+    text-align: center;
+}
+
+/* Navigation */
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+
+
+
+.collapsible {
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+}
+.content1 {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, padding 0.3s ease;
+}
+.content.open {
+    max-height: 500px;
+    padding: 0.5rem 0;
+}
+
+/* Tooltip Icon */
+.info-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: relative;
+    margin-left: 0.5rem;
+}
+.info-icon[data-tooltip]:hover:after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: -30px;
+    left: 20px;
+    background: #333;
+    color: white;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    border-radius: 4px;
+}
+
+/* Quiz Section */
+.quiz-section {
+    text-align: center;
+    margin: 2rem 0;
+}
+.quiz button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#quiz-result {
+    font-weight: bold;
+    margin-top: 1rem;
+}
+

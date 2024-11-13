@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freedom Fighters - Basic Combat Training</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="stylesheet" href="static/css/training.css">
+    <script src="static/js/active_link.js"></script>
+</head>
+<body>
+
+    <!-- Header with Navigation Links -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Freedom Fighters</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="training.html">Training Manuals</a>
+                <!--a href="server-guide.html">Server Connection Guide</a>
+                <a href="mods-overview.html">Mods Overview</a-->
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                &#9776; <!-- Hamburger icon for mobile menu -->
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Content for Advanced Infantry Training -->
+    <main class="manual-content">
+        <h1>Advanced Infantry Training</h1>
+        <p>Welcome to the advanced guide for infantry operations. This manual covers formations, drills, and tactical movement techniques essential for complex combat scenarios.</p>
+
+        <!-- Section: Formations and Sectors -->
+        <section class="manual-section" id="formations">
+            <h2 onclick="toggleSection('formations-content')" class="collapsible">Formations and Sectors</h2>
+            <div class="content" id="formations-content">
+                <p>During advanced infantry training, you will start by practicing movement in formation. For a refresher on the different formations, refer to the Basic Infantry manual. Use the Shacktac HUD, which helps you locate team members, their names, and compass directions (north, east, south, and west).</p>
+            
+                <p>The Shacktac HUD displays circles at 10, 25, and 50 meters. Maintain 5-meter spacing between teammates to minimize the risk of multiple casualties due to explosives.</p>
+                <img src="static/img/training/advanced_infrantry/hud.png" alt="Formations and Sectors" class="manual-image">
+                <span class="icon info-icon" data-tooltip="Spacing helps prevent multiple casualties.">🛈</span>
+            </div>
+        </section>
+
+        <!-- Section: Immediate Action Drills -->
+        <section class="manual-section" id="immediate-action">
+            <h2 onclick="toggleSection('immediate-action-content')" class="collapsible">Immediate Action Drills</h2>
+            <div class="content" id="immediate-action-content">
+                <p><strong>Contact Drill (Immediate Assault Drill):</strong> Use this drill when enemies are nearby and pose an immediate threat. This is also the drill for when your team comes under fire.</p>
+                <p>Upon spotting an immediate threat, start by calling out "Contact," followed by the direction (e.g., "front," "left," "right"). The team will then face the indicated direction and begin suppressing the area, regardless of target visibility. The person who spotted the threat should provide more details to the team lead if possible. Once the threat is neutralized, all team members should resume covering their designated sectors.</p>
+                <p><strong>Freeze Drill (Immediate Halt Drill):</strong> Use the freeze drill when a potential threat is detected that doesn’t pose an immediate danger but requires further investigation.</p>
+                <p>Call out "Freeze" followed by the type of threat, direction, and range. The entire team will hold position and face their sectors, while the team leader evaluates the threat and decides on the next steps.</p>
+                <img src="static/img/training/advanced_infrantry/contact_drill.png" alt="Immediate Action Drills" class="manual-image">
+                <span class="icon info-icon" data-tooltip="Freeze Drill is used when a threat is detected but not immediate.">🛈</span>
+            </div>
+        </section>
+
+        <!-- Section: Bounding Overwatch -->
+        <section class="manual-section" id="bounding-overwatch">
+            <h2 onclick="toggleSection('bounding-overwatch-content')" class="collapsible">Bounding Overwatch</h2>
+            <div class="content" id="bounding-overwatch-content">
+                <p>Bounding overwatch is a tactical movement technique allowing a team to move under enemy fire while maintaining suppressive fire. This maneuver is useful for advancing towards an enemy or retreating. It is also used to cross open, potentially dangerous areas.</p>
+                <p>In bounding overwatch, buddy teams (e.g., Red, Blue, and Gold teams) alternate moving and covering each other. Typically, Red and Blue teams are grouped together for this maneuver and called "Red." The team lead will initiate the maneuver by calling out "Bounding Overwatch," followed by the destination and which team should move first (e.g., "Bounding Overwatch, to the large hangar to the north, Gold move").</p>
+                <p>The first team (Gold in this example) moves forward by 15 meters, holds position (preferably behind cover), and starts suppressing the enemy, announcing "Set" over direct chat. The other team (Red) then advances past Gold by 15 meters, holds, and also suppresses the enemy, announcing "Set." The teams continue alternating moves until reaching the target.</p>
+                <p>The team lead will announce "Regroup" to end the bounding overwatch. It’s crucial that teams move no further than 15 meters from their covering buddies to avoid leaving them exposed.</p>
+                <img src="static/img/training/advanced_infrantry\bunding.png" alt="Bounding Overwatch" class="manual-image">
+                <span class="icon info-icon" data-tooltip="Bounding overwatch is essential for advancing under fire.">🛈</span>
+            </div>
+        </section>
+        <!-- Interactive Quiz -->
+        <section class="quiz-section">
+            <h2>Test Your Knowledge</h2>
+            <div class="quiz">
+                <p>1. What should you do during a Contact Drill?</p>
+                <label><input type="radio" name="q1" value="incorrect"> Ignore the threat</label>
+                <label><input type="radio" name="q1" value="correct"> Suppress the area with fire</label>
+                <button onclick="checkQuiz()">Submit</button>
+                <p id="quiz-result"></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Freedom Fighters | <a href="https://freedom-fighters.eu">freedom-fighters.eu</a></p>
+    </footer>
+    <script>
+        function toggleSection(sectionId) {
+            const content = document.getElementById(sectionId);
+            content.classList.toggle("open");
+        }
+
+        // Apply 'open' class with CSS for animations
+
+    </script>
+
+</body>
+</html>
