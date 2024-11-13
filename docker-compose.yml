@@ -1,0 +1,20 @@
+services:
+  caddy:
+    image: caddy:latest
+    restart: unless-stopped
+    cap_add:
+      - NET_ADMIN
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    volumes:
+      - 'C:\docker\freedom-fighters.eu\Caddyfile:/etc/caddy/Caddyfile'
+      - .\caddy_data:/data
+      - .\caddy_config:/config
+      - 'C:\docker\freedom-fighters.eu\site\web\:/var/www/site/'
+
+volumes:
+  caddy_data:
+    external: true
+  caddy_config:

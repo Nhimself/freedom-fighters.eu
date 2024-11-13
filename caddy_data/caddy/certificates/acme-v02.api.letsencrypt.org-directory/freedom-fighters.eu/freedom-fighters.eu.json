@@ -1,0 +1,8 @@
+{
+	"sans": [
+		"freedom-fighters.eu"
+	],
+	"issuer_data": {
+		"url": "https://acme-v02.api.letsencrypt.org/acme/cert/0472fda3dc6761f49bce9d3a22c89a96cab1"
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"status": "valid",
+	"contact": [
+		"mailto:nikimench@gmail.com"
+	],
+	"termsOfServiceAgreed": true,
+	"externalAccountBinding": {
+		"protected": "eyJhbGciOiJIUzI1NiIsImtpZCI6IlVJQ3RMS0VnM1hKNzkzR2JvLXZqZmciLCJ1cmwiOiJodHRwczovL2FjbWUuemVyb3NzbC5jb20vdjIvRFY5MC9uZXdBY2NvdW50In0",
+		"payload": "eyJjcnYiOiJQLTI1NiIsImt0eSI6IkVDIiwieCI6IjlqaVVPOFNhQk4yNC0yTlU1clhRaXRDeWg4U0x4eThkSER5YmFWTDJyd1UiLCJ5IjoiZkZpSi0tUDlzczc2aXA3bGZwMU1walRTUUswNWkzTW1scHdGc21ZMmlycyJ9",
+		"signature": "Je5E68wXOT31o1IrkyCbMl1D2mmAjAguPCIr5lUAhd4"
+	},
+	"orders": "https://acme.zerossl.com/v2/DV90/account/UICtLKEg3XJ793Gbo-vjfg/orders",
+	"location": "https://acme.zerossl.com/v2/DV90/account/UICtLKEg3XJ793Gbo-vjfg"
+}
