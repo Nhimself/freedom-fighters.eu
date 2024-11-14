@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freedom Fighters - Basic Infantry Training</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="stylesheet" href="static/css/training.css">
+    <script src="static/js/active_link.js"></script>
+    <script src="static/js/quiz.js"></script>
+</head>
+<body>
+
+    <!-- Header with Navigation Links -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Freedom Fighters</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="training.html">Training Manuals</a>
+                <!--a href="server-guide.html">Server Connection Guide</a>
+                <a href="mods-overview.html">Mods Overview</a-->
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                &#9776; <!-- Hamburger icon for mobile menu -->
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Content for Basic Infantry Training -->
+    <main class="manual-content">
+        <h1>Basic Infantry Training</h1>
+        <p>Learn the fundamentals of combat, team roles, formations, and essential battlefield skills.</p>
+        
+        <!-- Section: Team Members -->
+        <section class="manual-section" id="team-members">
+            <h2 onclick="toggleSection('team-members-content')" class="collapsible">Team Members</h2>
+            <div class="content" id="team-members-content">
+                <p>The primary unit in this section is the Special Forces team, typically comprising 6 members, each with a specialized role:</p>
+                <ul>
+                    <li><strong>Team Lead (TL):</strong> Leads the team, decides formation, and has an under-barrel grenade launcher. The TL is the most experienced team member.</li>
+                    <li><strong>Automatic Rifleman:</strong> Carries the light machine gun with the most firepower and ammo for suppression.</li>
+                    <li><strong>Radio Operator:</strong> Operates the long-range radio, communicates with other teams and air support.</li>
+                    <li><strong>AT Specialist:</strong> Equipped with an unguided rocket launcher and two missiles.</li>
+                    <li><strong>Marksman:</strong> Uses a marksman rifle with long-range optics.</li>
+                    <li><strong>Saboteur:</strong> Primarily carries explosives and can deploy various mines.</li>
+                    <li><strong>Medic:</strong> Provides medical support, carries extensive medical supplies.</li>
+                </ul>
+                <p>These members can be divided into 2-man buddy teams: <strong style="color: red;">Red</strong> (Team Lead + Medic), <strong style="color: blue;">Blue</strong> (Radio Operator + Saboteur), and <strong style="color: gold;">Gold</strong> (Automatic Rifleman + Marksman). These buddy teams facilitate maneuvers like bounding overwatch.</p>
+                <span class="icon info-icon" data-tooltip="Each role has specialized responsibilities.">🛈</span>
+            </div>
+        </section>
+    
+        <!-- Section: The Automatic Rifleman -->
+        <section class="manual-section" id="automatic-rifleman">
+            <h2 onclick="toggleSection('automatic-rifleman-content')" class="collapsible">The Automatic Rifleman</h2>
+            <div class="content" id="automatic-rifleman-content">
+                <p>The automatic rifleman wields a light machine gun, excelling in suppressive fire at medium to long ranges, especially effective when paired with a marksman. The high fire rate and large magazine make this role essential for area denial.</p>
+                <p><strong>Weapon Resting:</strong> For accuracy, especially when standing or crouching, the rifleman should deploy the weapon to reduce recoil. This can be done by pressing <em>C</em> (recommended to rebind to <em>ctrl + space</em>).</p>
+                <img src="static/img/training/basic-infantry/automatic_rifleman.png" alt="Automatic Rifleman" class="manual-image">
+                <span class="icon info-icon" data-tooltip="Position and coordination are key for the rifleman.">🛈</span>
+            </div>
+        </section>
+    
+        <!-- Section: The Saboteur -->
+        <section class="manual-section" id="saboteur">
+            <h2 onclick="toggleSection('saboteur-content')" class="collapsible">The Saboteur</h2>
+            <div class="content" id="saboteur-content">
+                <p>The saboteur specializes in deploying explosives, often carrying a satchel charge, demo charge, and an M6 SLAM. Specific explosives include:</p>
+                <ul>
+                    <li><strong>M112 Demolition Block:</strong> Small explosive, compatible with remote detonators M26 and M57.</li>
+                    <li><strong>M183 Demolition Charge:</strong> Larger charge, effective for demolishing structures, also compatible with M26 and M57.</li>
+                    <li><strong>M18A1 Claymore:</strong> Anti-personnel charge that releases steel balls in a 50m frontal radius.</li>
+                </ul>
+                <p><strong>Placing and Detonating:</strong> To place explosives, open the ACE Self-interaction menu, select "Explosives" -> "Place," then use the mouse to position the charge.</p>
+                <img src="static/img/training/basic-infantry/saboteur.jpeg" alt="Saboteur" class="manual-image">
+                <span class="icon info-icon" data-tooltip="Ensure explosives are placed carefully.">🛈</span>
+            </div>
+        </section>
+    
+        <!-- Section: Formations and Sectors -->
+        <section class="manual-section" id="formations">
+            <h2 onclick="toggleSection('formations-content')" class="collapsible">Formations and Sectors</h2>
+            <div class="content" id="formations-content">
+                <p>Special Forces teams use three primary formations to enhance combat effectiveness:</p>
+                <ul>
+                    <li><strong>Column Formation:</strong> Used in narrow or urban environments.</li>
+                    <li><strong>Wedge Formation:</strong> Effective in open areas when contact with the enemy is likely.</li>
+                    <li><strong>Line Formation:</strong> Best for assaulting positions or cresting hills.</li>
+                </ul>
+                <p>Each member covers a specific sector (front, rear, left, right) relative to the direction of movement.</p>
+                <img src="static/img/training/basic-infantry/column-formation.png" alt="Formations and Sectors" class="manual-image">
+                <span class="icon info-icon" data-tooltip="Proper formations improve battlefield effectiveness.">🛈</span>
+            </div>
+        </section>
+    
+        <!-- Section: Communications -->
+        <section class="manual-section" id="communications">
+            <h2 onclick="toggleSection('communications-content')" class="collapsible">Communications</h2>
+            <div class="content" id="communications-content">
+                <p>Charlie Foxtrot utilizes the ACRE2 mod with TeamSpeak for in-game communication. Use direct speech for team coordination and hold <em>Caps Lock</em> to transmit over the radio.</p>
+                <p>The AN-PRC/343 radio has an 800m range, which can be accessed by <em>CTRL + ALT + CAPS LOCK</em>. Volume and channel adjustments are available, and you can direct audio to specific ears for clarity.</p>
+                <img src="static/img/training/basic-infantry/radio.png" alt="Communications" class="manual-image">
+                <span class="icon info-icon" data-tooltip="Efficient communication is crucial for mission success.">🛈</span>
+            </div>
+        </section>
+    
+        <!-- Section: Medical Emergencies -->
+        <section class="manual-section" id="medical-emergencies">
+            <h2 onclick="toggleSection('medical-emergencies-content')" class="collapsible">Medical Emergencies</h2>
+            <div class="content" id="medical-emergencies-content">
+                <p>The ACE 3 advanced medical system is used to simulate realistic medical scenarios. Wounds vary by type (velocity, laceration, puncture) and severity (small, medium, large). Tourniquets, morphine, and epinephrine are essential tools.</p>
+                <p><strong>Self-Care:</strong> Use the self-interaction menu to apply field dressings to wounds. Use morphine to manage pain but beware of its effects on heart rate. Epinephrine can be used if heart rate drops too low.</p>
+                <p><strong>Assisting Others:</strong> If a teammate is down, call it out, apply tourniquets as needed, and perform CPR if they remain unconscious.</p>
+                <img src="static/img/training/basic-infantry/basic-medic-system.png" alt="Medical Emergencies" class="manual-image">
+                <span class="icon info-icon" data-tooltip="Quick response to injuries can save lives.">🛈</span>
+            </div>
+        </section>
+    
+        <!-- Interactive Quiz -->
+        <section class="quiz-section">
+            <h2>Test Your Knowledge</h2>
+            <div class="quiz">
+                <p>1. What should the saboteur do after placing a mine?</p>
+                <label><input type="radio" name="q1" value="incorrect"> Run forward to ensure placement</label>
+                <label><input type="radio" name="q1" value="correct"> Move backward to avoid detonation risk</label>
+                <button onclick="checkQuiz()">Submit</button>
+                <p id="quiz-result"></p>
+            </div>
+        </section>
+    </main>
+    
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Freedom Fighters | <a href="https://freedom-fighters.eu">freedom-fighters.eu</a></p>
+    </footer>
+</body>
+</html>
