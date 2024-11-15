@@ -1,387 +1,376 @@
-/* Fonts */
-
-@font-face {
-    font-family: 'Saira Stencil One';
-    font-style: normal;
-    font-weight: 400;
-    src: url(../fonts/SairaStencilOne-Regular.ttf) format('ttf');
-}
-
-.saira-stencil-one-regular {
-    font-family: "Saira Stencil One", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-
-/* Reset and basic styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    color: #f0f0f0;
-    background-color: #1a1a1a;
+
+
+
+body, html {
+    height: 100%;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px; /* Adjust size if needed */
+    line-height: 1.6;
+    color: #FAFAEE;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-h1, h2, h3, p, ul, li, blockquote {
-    margin-bottom: 1rem;
-}
-
-/* Hero Section */
-
-.hero {
-    position: relative;
-    height: 100vh;
+header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #fff;
-}
-
-.hero-slideshow {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-.slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    opacity: 0;
-    animation: slideAnimation 36s infinite;
-}
-
-/* Ken Burns Effect and fade transition for each slide */
-@keyframes slideAnimation {
-    0% { opacity: 0; transform: scale(1.1); }
-    5% { opacity: 1; }
-    25% { opacity: 1; transform: scale(1.2); }
-    30% { opacity: 0; transform: scale(1.3); }
-}
-
-.slide:nth-child(1) { animation-delay: 0s; }
-.slide:nth-child(2) { animation-delay: 6s; }
-.slide:nth-child(3) { animation-delay: 12s; }
-.slide:nth-child(4) { animation-delay: 18s; }
-.slide:nth-child(5) { animation-delay: 24s; }
-.slide:nth-child(6) { animation-delay: 30s; }
-.slide:nth-child(7) { animation-delay: 30s; }
-.slide:nth-child(8) { animation-delay: 30s; }
-.slide:nth-child(9) { animation-delay: 30s; }
-
-/* Overlay to darken background */
-.overlay {
-    position: relative;
-    z-index: 1;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 2rem;
-}
-
-
-video[poster] center center/cover no-repeat{
-    object-fit: cover;
-    width: 100vw;
-    height: 100vh;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0) !important;
     position: fixed;
-    top: 0;
-    left: 0;
+    width: 100%;
+    z-index: 10;
 }
 
-.hero .overlay {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 2rem;
+/* Apply Jaro font to menu buttons */
+nav ul li a {
+    font-family: 'Jaro', sans-serif;
 }
 
-.hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+/* Apply Jaro font to headings */
+.intro h2, .recent-mission, .enlist-button, h3 {
+    font-family: 'Jaro', sans-serif;
 }
 
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
+
+
+/* Apply Bayon font to the h1 in the intro section */
+.intro h1 {
+    font-family: 'Bayon', sans-serif;
+    font-size: 128px !important; /* Adjust size as needed for desired effect */
+    line-height: 0.9;
+    margin-bottom: 20px;
 }
 
-.cta-buttons {
+
+
+/* Logo styling */
+.logo img {
+    height: 56px; /* Adjust as needed */
+    width: auto; /* Maintain aspect ratio */
+    display: block; /* Remove inline spacing */
+    margin-left: 10px; /* Add spacing to the left of the logo */
+}
+
+
+nav ul {
     display: flex;
-    gap: 1rem;
-    justify-content: center;
-}
-
-.btn-primary, .btn-secondary {
-    padding: 0.8rem 1.5rem;
-    border-radius: 5px;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-.btn-primary {
-    background-color: #007bff;
-    color: #fff;
-}
-
-.btn-secondary {
-    background-color: #555;
-    color: #fff;
-}
-
-/* About Section */
-.about {
-    padding: 4rem 2rem;
-    text-align: center;
-    background-color: #222;
-}
-
-.about h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.values {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    justify-content: center;
-}
-
-.value {
-    background-color: #333;
-    padding: 1.5rem;
-    border-radius: 5px;
-    max-width: 300px;
-}
-
-/* Features Section */
-.features {
-    padding: 3rem 2rem;
-    background-color: #282828;
-    text-align: center;
-}
-
-.features ul {
     list-style: none;
 }
 
-.features li {
-    margin: 1rem 0;
+nav ul li {
+    margin-right: 40px;
 }
 
-/* Social Proof Section */
-.social-proof {
-    padding: 3rem 2rem;
-    background-color: #333;
+nav ul li a {
+    color: #FAFAEE;
+    text-decoration: none;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    color: #EF6121;
+}
+
+.enlist {
+    padding: 5px 10px;
+    background-color: #EF6121;
+    border-radius: 0px;
+    color: #FAFAEE;
+}
+
+.enlist:hover, .enlist-button:hover {
+    color: #000; /* Black text on hover */
+}
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    z-index: -2;
+}
+
+.overlay-video {
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text contrast */
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+#background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Countdown container styling */
+#countdown {
+    display: flex;
+    gap: 20px;
+    font-family: 'Bayon', sans-serif;
+    color: #FAFAEE;
+    margin-top: 20px;
+}
+
+/* Each countdown item */
+.countdown-item {
     text-align: center;
+}
+
+/* Large numbers styling */
+.number {
+    font-size: 64px; /* Adjust to desired size */
+    line-height: 1;
+    color: #EF6121;
+}
+
+/* Small label styling */
+.label {
+    font-size: 16px; /* Adjust for readability */
+    text-transform: uppercase;
+    margin-top: 5px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.intro {
+    position: relative;
+    top: 100px;
+    padding: 50px;
+    max-width: 750px;
+    margin-left: 50px;
+
+}
+
+.intro h1 {
+    font-size: 48px;
+}
+
+.intro h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.underline {
+    width: 100px;
+    height: 2px;
+    background-color: #EF6121;
+    margin-bottom: 20px;
+}
+
+.enlist-button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #EF6121;
+    color: #FAFAEE;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Styling for the "Most Recent Mission" title */
+.recent-mission h3 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700; /* Bold weight */
+    font-size: 18px; /* Adjust as needed */
+    margin-bottom: 10px;
+}
+
+/* Styling for the video embed with a border */
+.recent-mission iframe {
+    border: 2px solid #EF6121; /* Border around the video */
+    display: block; /* Ensure proper alignment */
+}
+
+/* Positioning for the recent mission container */
+.recent-mission {
+    position: absolute;
+    bottom: 120px;
+    right: 5%;
+    background: rgba(0, 0, 0, 0); /* Background for the section (optional) */
+    padding: 10px;
+}
+
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    animation: bounce 2s infinite;
+    color:#EF6121;
+}
+
+.community-features {
+  font-family: 'Jaro', sans-serif;
+  color:#EF6121;
+  padding: 50px;
+  padding-left:150px;
+  padding-right:150px;
+  width:100%;
+  height:500px;
+  background: url('media/com-bg.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-align: center;
+}
+
+.community-features p, .testimonials p{
+  font-family: 'Roboto Condensed', sans-serif;
+  color:#FAFAEE;
+  padding-top: 50px;
+  text-align: left;
+  line-height: 2em;
+}
+
+.community-features .bullet {
+  color:#EF6121;
+}
+
+.testimonials {
+  font-family: 'Jaro', sans-serif;
+  color:#EF6121;
+  padding: 50px;
+  margin-top:-120px;
+  padding-left:150px;
+  padding-right:150px;
+  width:100%;
+  height:500px;
+  background-color:#2A2C17;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-align: center;
 }
 
 blockquote {
-    background-color: #444;
+    background-color: #505331;
     padding: 1rem;
-    border-left: 5px solid #007bff;
-    margin-bottom: 1.5rem;
-}
+    border-left: 5px solid #FAFAEE;
+    margin-bottom: 50px;
 
-/* Secondary CTA */
-.cta-secondary {
-    padding: 2rem;
-    background-color: #007bff;
-    text-align: center;
-}
 
-.cta-secondary h2 {
-    color: #fff;
-    margin-bottom: 1rem;
-}
 
-.cta-secondary .btn-primary {
-    background-color: #fff;
-    color: #007bff;
-}
-
-/* Footer */
-footer {
-    background-color: #111;
-    color: #777;
-    padding: 1rem;
-    text-align: center;
 }
 
 
-
-
-/* /* Countdown Timer Section */
-.countdown {
-    padding: 2rem;
-    text-align: center;
-    background-color: #222;
-    color: #f0f0f0;
+blockquote p{
+ margin-top:-30px;
 }
 
-#timer {
+blockquote cite{
+  text-align: left !important;
+}
+
+.next-step {
+  font-family: 'Jaro', sans-serif;
+  color:#EF6121;
+  padding: 50px;
+  padding-left:150px;
+  padding-right:150px;
+  height:250px;
+  width:100%;
+
+  background: url('media/camo-bg.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-align: center;
+}
+
+.our-mission {
+  font-family: 'Jaro', sans-serif;
+  color:#EF6121;
+  padding: 50px;
+  padding-left:150px;
+  padding-right:150px;
+  margin-top:300px;
+  width:100%;
+  height:500px;
+  background: url('media/camo-bg.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-align: center;
+}
+
+.our-mission p  {
+  font-family: 'Roboto Condensed', sans-serif;
+  color:#FAFAEE;
+}
+
+/* Box container */
+.our-mission .boxes {
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
-    font-size: 1.5rem;
-    flex-wrap: wrap; /* Allows units to wrap on small screens */
+    gap: 30px;
 }
 
-.time-unit {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+/* Box styling */
+.our-mission .box {
+    width: 250px;
+    padding: 20px;
+    margin-top:50px;
+    color: #FAFAEE;
+    background-color: #505331;
+    border-radius: 0px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.time-unit span {
-    font-size: 3rem;
+/* Title inside the box */
+.our-mission .box-title {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 15px;
     font-weight: bold;
-    color: #007bff;
 }
 
-.time-unit p {
-    font-size: 1rem;
-    color: #ccc;
-    margin-top: 0.5rem;
+/* Description inside the box */
+.our-mission .box-description {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+}
+.underline2 {
+    position:relative;
+    margin-left:-150px;
+    left:50%;
+    width: 300px;
+    height: 2px;
+    background-color: #EF6121;
+    margin-bottom: 20px;
+
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    #timer {
-        font-size: 1.2rem; /* Reduce font size on smaller screens */
-        gap: 1rem; /* Reduce space between units */
-    }
-
-    .time-unit span {
-        font-size: 2rem;
-    }
-
-    .time-unit p {
-        font-size: 0.9rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .time-unit span {
-        font-size: 1.8rem; /* Further reduce font size for small devices */
-    }
-
-    .time-unit p {
-        font-size: 0.8rem;
-    }
-}
-
-/* Style for active page link in the Nav bar*/
-.navbar a.active {
-    font-weight: bold;
-    color: #007bff; /* Active link color */
-    border-bottom: 2px solid #007bff; /* Optional underline effect */
-}
-
-/* General header and navbar styling */
-header {
-    background-color: #1a1a1a;
+footer {
+  background-color: #1C1E0D;
+    color: #FAFAEE;
     padding: 1rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    height:100px;
+    vertical-align: middle;
 }
 
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
+footer img {
+  max-height:20px;
+  margin-top:25px;
 }
 
-.navbar a {
-    color: #f0f0f0;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    font-weight: bold;
-    transition: color 0.3s ease;
+footer a {
+  color:#FAFAEE;
 }
 
-/* Logo Styling */
-.navbar .logo {
-    font-family: 'Saira Stencil One';
-    font-size: 1.5rem;
-    color: #007bff; /* Use a bold color for the logo to stand out */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
 }
-
-/* Navigation Links */
-.nav-links {
-    display: flex;
-    gap: 1rem;
-}
-
-.nav-links a:hover {
-    color: #007bff; /* Hover color */
-    border-bottom: 2px solid #007bff; /* Optional hover underline effect */
-}
-
-/* Active Page Link */
-.navbar a.active {
-    color: #007bff;
-    border-bottom: 2px solid #007bff;
-}
-
-/* Mobile Menu Styling */
-.menu-toggle {
-    display: none; /* Hidden on desktop */
-    font-size: 1.5rem;
-    background: none;
-    border: none;
-    color: #f0f0f0;
-    cursor: pointer;
-}
-
-@media (max-width: 768px) {
-    /* Responsive Styling for Small Screens */
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 10px;
-        background-color: #1a1a1a;
-        width: 200px;
-        border-radius: 5px;
-        padding: 1rem;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-    }
-    
-    .nav-links a {
-        padding: 0.5rem 1rem;
-        border-bottom: 1px solid #333;
-    }
-
-    .nav-links a:last-child {
-        border-bottom: none;
-    }
-
-    /* Show menu button on mobile */
-    .menu-toggle {
-        display: block;
-    }
-
-    /* Show menu when active */
-    .nav-links.show {
-        display: flex;
-    }
-}
-
