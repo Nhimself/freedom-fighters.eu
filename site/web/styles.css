@@ -50,7 +50,7 @@ nav ul li a {
 
 /* Logo styling */
 .logo img {
-    height: 36px; /* Adjust as needed */
+    height: 56px; /* Adjust as needed */
     width: auto; /* Maintain aspect ratio */
     display: block; /* Remove inline spacing */
     margin-left: 10px; /* Add spacing to the left of the logo */
@@ -63,7 +63,7 @@ nav ul {
 }
 
 nav ul li {
-    margin-right: 20px;
+    margin-right: 40px;
 }
 
 nav ul li a {
