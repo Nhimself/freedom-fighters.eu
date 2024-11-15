@@ -19,7 +19,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 30px;
     background-color: rgba(0, 0, 0, 0) !important;
     position: fixed;
     width: 100%;
@@ -219,7 +219,6 @@ nav ul li a.active, nav ul li a:hover {
   padding: 50px;
   padding-left:150px;
   padding-right:150px;
-
   width:100%;
   height:500px;
   background: url('media/com-bg.png');
@@ -228,7 +227,7 @@ nav ul li a.active, nav ul li a:hover {
   text-align: center;
 }
 
-.community-features p{
+.community-features p, .testimonials p{
   font-family: 'Roboto Condensed', sans-serif;
   color:#FAFAEE;
   padding-top: 50px;
@@ -239,6 +238,56 @@ nav ul li a.active, nav ul li a:hover {
 .community-features .bullet {
   color:#EF6121;
 }
+
+.testimonials {
+  font-family: 'Jaro', sans-serif;
+  color:#EF6121;
+  padding: 50px;
+  margin-top:-120px;
+  padding-left:150px;
+  padding-right:150px;
+  width:100%;
+  height:500px;
+  background-color:#2A2C17;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-align: center;
+}
+
+blockquote {
+    background-color: #505331;
+    padding: 1rem;
+    border-left: 5px solid #FAFAEE;
+    margin-bottom: 50px;
+
+
+
+}
+
+
+blockquote p{
+ margin-top:-30px;
+}
+
+blockquote cite{
+  text-align: left !important;
+}
+
+.next-step {
+  font-family: 'Jaro', sans-serif;
+  color:#EF6121;
+  padding: 50px;
+  padding-left:150px;
+  padding-right:150px;
+  height:250px;
+  width:100%;
+
+  background: url('media/camo-bg.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-align: center;
+}
+
 .our-mission {
   font-family: 'Jaro', sans-serif;
   color:#EF6121;
@@ -301,6 +350,24 @@ nav ul li a.active, nav ul li a:hover {
     background-color: #EF6121;
     margin-bottom: 20px;
 
+}
+
+footer {
+  background-color: #1C1E0D;
+    color: #FAFAEE;
+    padding: 1rem;
+    text-align: center;
+    height:100px;
+    vertical-align: middle;
+}
+
+footer img {
+  max-height:20px;
+  margin-top:25px;
+}
+
+footer a {
+  color:#FAFAEE;
 }
 
 @keyframes bounce {
