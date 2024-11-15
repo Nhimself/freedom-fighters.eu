@@ -1,9 +1,0 @@
-{
-	"status": "valid",
-	"contact": [
-		"mailto:nikimench@gmail.com"
-	],
-	"termsOfServiceAgreed": true,
-	"orders": "",
-	"location": "https://acme-v02.api.letsencrypt.org/acme/acct/2054694117"
-}
