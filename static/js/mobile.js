@@ -1,8 +1,9 @@
-// Select the menu button and the nav links container
-const menuToggle = document.querySelector('.menu-toggle');
-const navLinks = document.querySelector('.nav-links');
+// toggle hamburger menu on small screens
+    document.addEventListener('DOMContentLoaded', function () {
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.menu');
 
-// Toggle 'show' class on nav links when menu button is clicked
-menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
-});
+        hamburger.addEventListener('click', function () {
+            navLinks.classList.toggle('active');
+        });
+    });

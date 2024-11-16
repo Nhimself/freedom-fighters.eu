@@ -1,11 +1,47 @@
+/* Fonts */
+/* latin */
+@font-face {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fonts/Roboto_Condensed.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  /* latin-ext */
+@font-face {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../fonts/Roboto_Condensed-700.woff2) format('woff2');
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+/* latin-ext */
+@font-face {
+    font-family: 'Jaro';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fonts/Jaro-Regular.woff2) format('woff2');
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+/* latin */
+@font-face {
+    font-family: 'Bayon';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fonts/Bayon.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-
-
 
 body, html {
     height: 100%;
@@ -32,7 +68,7 @@ nav ul li a {
 }
 
 /* Apply Jaro font to headings */
-.intro h2, .recent-mission, .enlist-button, h3 {
+.intro h2, .recent-mission, .enlist-button, h3, .training-button {
     font-family: 'Jaro', sans-serif;
 }
 
@@ -82,7 +118,7 @@ nav ul li a.active, nav ul li a:hover {
     color: #FAFAEE;
 }
 
-.enlist:hover, .enlist-button:hover {
+.enlist:hover, .enlist-button:hover, .training-button {
     color: #000; /* Black text on hover */
 }
 
@@ -169,6 +205,16 @@ nav ul li a.active, nav ul li a:hover {
 }
 
 .enlist-button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #EF6121;
+    color: #FAFAEE;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.training-button {
     padding: 10px 20px;
     margin-top: 20px;
     background-color: #EF6121;
@@ -366,6 +412,15 @@ footer img {
 footer a {
   color:#FAFAEE;
 }
+/* Hamburger Menu Button */
+.hamburger {
+    display: none; /* Hidden by default */
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: #FAFAEE;
+    cursor: pointer;
+}
 
 @keyframes bounce {
     0%, 100% { transform: translateY(0); }
@@ -373,23 +428,69 @@ footer a {
 }
 
 /* Make the video responsive and inline with content on smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 390px) { 
+    
+    .logo img {
+        height: 32px;
+        position: fixed;
+        left: 0px;
+    }
+    /* Navigation Menu Hidden by Default */
+    nav ul {
+        display: none; /* Hide navigation menu */
+        flex-direction: column;
+        background-color: #000; /* Dropdown background */
+        top: 60px; /* Below header */
+        left: 0;
+        width: 100%; /* Full screen width */
+        padding: 15px;
+        z-index: 9;
+        border-top: 1px solid #EF6121;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    }
+    /* Show menu when active */
+    nav ul.active {
+        display: flex;
+    }
+    /* Hamburger Button Visible */
+    .hamburger {
+        display: block;
+    }
+    /* Adjust title */
+    .intro h1 {
+        font-size: 90px !important;
+    }
+    /* Adjust link spacing and size */
+    nav ul li {
+        margin: 10px 0;
+    }
+    nav ul li a {
+        font-size: 14px;
+    }
     p {
        width: 90%; 
        align-content: center;
     }
     .intro {
         padding: 0px;
+        margin: 30px;
     }
     header {
         flex-direction: column;
+        padding: 10px 20px;
+        align-items: flex-end;
+    }
+    .enlist-button {
+        align-content: center;
+    }
+    .scroll-indicator {
+        visibility: hidden;
     }
     .recent-mission {
         position: static; /* Removes absolute positioning */
         margin: 20px auto; /* Center the container */
         margin-top: 100px;
         width: 90%; /* Adjust width to fit smaller screens */
-        text-align: center; /* Centers the text and iframe */
     }
 
     .recent-mission iframe {
@@ -401,17 +502,27 @@ footer a {
         margin-top: 20px;
         padding-left: 10%;
         padding-right: 10%;
+        background-repeat: unset;
+        height: auto;        
+    }
+    .community-features {
+        padding: 10%;
+        background-size: cover;
+        background-position: center;
+        height: auto;
     }
     .our-mission .boxes {
         flex-direction: column;
         align-items: center;
     }
-    .community-features {
-        display: inline-grid;
-        margin-top: 100%;
-    }
     .testimonials {
-        margin-top: 10%;
+        padding: 10px;
+        margin: unset;
         height: auto;
+    }
+    .next-step {
+        background-repeat: unset;
+        height: unset;
+        padding: 30px;
     }
 }
