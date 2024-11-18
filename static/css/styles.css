@@ -18,7 +18,7 @@
     src: url(../fonts/Roboto_Condensed-700.woff2) format('woff2');
     unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
   }
-
+/*
   @font-face {
       font-family: 'Jaro';
       font-style: normal;
@@ -26,7 +26,7 @@
       font-display: swap;
       src: url(../fonts/Jaro-Regular.woff2) format('woff2');
       unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-    }
+    }*/
 /* latin */
 @font-face {
     font-family: 'Bayon';
@@ -66,12 +66,12 @@ header {
 
 /* Apply Jaro font to menu buttons */
 nav ul li a {
-    font-family: 'StickNoBills Bold', sans-serif;
+    font-family: 'Jaro', sans-serif;
 }
 
 /* Apply Jaro font to headings */
 .intro h2, .recent-mission, .enlist-button, h3, .training-button, .manuals-intro h2 {
-    font-family: 'StickNoBills Bold', sans-serif;
+    font-family: 'Jaro', sans-serif;
 }
 
 
