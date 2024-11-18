@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freedom Fighters - Training Program</title>
-    <link rel="stylesheet" href="static/css/styles_old.css">
+    <link rel="stylesheet" href="static/css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
+
     <script src="static/js/active_link.js"></script>
+
 </head>
 <body>
     <!-- Header with Navigation Links -->
@@ -16,10 +22,10 @@
         <nav>
 
        <ul id="menu" class="menu">
-           <li><a href="#" class="active">Home</a></li>
+           <li><a href="index.html" target="_self">Home</a></li>
            <li><a href="mods-overview.html" target="_self">Mods Overview</a></li>
            <li><a href="server-guide.html" target="_self">Server Guide</a></li>
-           <li><a href="training.html" target="_self">Training</a></li>
+           <li><a href="training.html" class="active" target="_self">Training</a></li>
            <li><a href="https://discord.gg/2EjZr5YkeB" class="enlist" target="_blank">Enlist</a></li>
        </ul>
    </nav>
@@ -27,23 +33,97 @@
 
     <!-- Main Content for Training Manuals -->
     <main class="manuals-overview">
-        <h1>Training Manuals</h1>
+
+      <section class="manuals-intro">
+          <h1>TRAINING <br/>MANUALS</h1>
+      </section>
+
+      <section class="manuals-section">
         <p>Explore our structured training manuals designed to prepare you for all aspects of our tactical missions.</p>
-        
-        <!-- Links to Each Manual Page -->
-        <ul class="manual-list">
-            <li><a href="Basic_Training.html">Basic Training</a></li>
-            <li><a href="Advanced_Infantry_Training.html">Advanced Infantry Training</a></li>
-            <li><a href="Fireteam_Lead.html">Fireteam Lead</a></li>
-            <li><a href="training-manual4.html">Field Medical Operations</a></li>
-            <li><a href="training-manual5.html">Vehicle and Heavy Equipment</a></li>
-            <li><a href="training-manual6.html">Leadership and Strategy</a></li>
-        </ul>
+
+        <div class="grid-container">
+    <a href="Basic_Training.html">
+      <div class="grid-item">
+        <div class="svg-icons"><img src="static/img/icons/person-rifle-solid.png"  /> </div>
+        <h3>BASIC TRAINING</h3>
+      </div>
+    </a>
+    <a href="Advanced_Infantry_Training.html">
+    <div class="grid-item">
+      <div class="svg-icons"><img src="static/img/icons/person-military-rifle-solid.png"  /> </div>
+      <h3>ADVANCED INFANTRY TRAINING</h3>
+    </div>
+    </a>
+    <a href="Fireteam_Lead.html">
+    <div class="grid-item">
+      <div class="svg-icons"><img src="static/img/icons/user-ninja-solid.png"  /> </div>
+      <h3>FIRETEAM LEAD</h3>
+    </div>
+    </a>
+    <a href="Field_Medical_Operations.html">
+    <div class="grid-item">
+      <div class="svg-icons"><img src="static/img/icons/user-nurse-solid.png"  /> </div>
+      <h3>FIELD MEDICAL OPERATIONS</h3>
+    </div>
+    </a>
+    <a href="Vehicle_And_Heavy_Equipment.html">
+    <div class="grid-item">
+      <div class="svg-icons"><img src="static/img/icons/truck-plane-solid.png"  /> </div>
+      <h3>VEHICLE AND HEAVY EQUIPMENT</h3>
+    </div>
+    </a>
+    <a href="Leadership_And_Strategy.html">
+    <div class="grid-item">
+      <div class="svg-icons"><img src="static/img/icons/chess-solid.png"  /> </div>
+      <h3>LEADERSHIP AND STRATEGY</h3>
+    </div>
+    </a>
+  </div>
+
+      <!---  <div class="boxes">
+
+
+            <div class="box">
+              <div class="box-title"><a href="Basic_Training.html">BASIC TRAINING</a></div>
+            </div>
+
+          <div class="box">
+            <div class="box-title"><a href="Advanced_Infantry_Training.html">ADVANCED INFANTRY TRAINING</a></div>
+          </div>
+
+          <div class="box">
+            <div class="box-title"><a href="Fireteam_Lead.html">FIRETEAM LEAD</a></div>
+          </div>
+
+
+        </div>
+
+        <div class="boxes">
+
+
+          <div class="box">
+            <div class="box-title"><a href="Field_Medical_Operations.html">FIELD MEDICAL OPERATIONS</a></div>
+          </div>
+
+          <div class="box">
+            <div class="box-title"><a href="Vehicle_And_Heavy_Equipment.html">VEHICLE AND HEAVY EQUIPMENT</a></div>
+          </div>
+
+          <div class="box">
+            <div class="box-title"><a href="Leadership_And_Strategy.html">LEADERSHIP AND STRATEGY</a></div>
+          </div>
+
+
+        </div>
+
+      -->
+      </section>
+
     </main>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Freedom Fighters | <a href="https://freedom-fighters.eu">freedom-fighters.eu</a></p>
+        <p>&copy; 2024 Freedom Fighters | <a href="https://freedom-fighters.eu">freedom-fighters.eu</a> | <a href="http://www.stefandinca.ro" target="_blank"><img src="media/stefan-dinca-logo.png" > </a></p>
     </footer>
 
 </body>
