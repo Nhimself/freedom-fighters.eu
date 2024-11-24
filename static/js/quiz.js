@@ -1,8 +1,17 @@
-// Toggle Content Visibility
+// Toggle Content Visibility and Hide Button
 function toggleSection(sectionId) {
     const content = document.getElementById(sectionId);
+    const button = content.previousElementSibling; // Get the button (previous sibling of content)
+    
     content.classList.toggle("open");
+    
+    // Hide the "more..." button when clicked
+    if (content.classList.contains("open")) {
+        button.style.display = "none";  // Hide the "more..." button
+    }
 }
+
+
 
 // Quiz Functionality
 function checkQuiz() {

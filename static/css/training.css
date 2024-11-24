@@ -1,15 +1,29 @@
 /* Training program */
 
-/* General Styles */
-body, h1, h2, p {
-    font-family: Arial, sans-serif;
+body {
+    background: url('../../media/camo-bg.png');;
+    display: flex;
+    flex-direction: column; /* Ensures vertical alignment */
+    align-items: center; /* Centers children vertically */
+    min-height: 100vh; /* Ensures body takes up full viewport height */
 }
-
 /* Manual Sections */
 .manual-content {
-    margin: 2rem auto;
-    width: 90%;
-    max-width: 800px;
+    font-family: 'Jaro', sans-serif;
+    color:#EF6121;
+    padding: 50px;
+    padding-left:auto;
+    padding-right:auto;
+    padding-top: 10%;
+    width:80%;
+}
+main.manual-content {
+    margin: 0 auto; /* Top and bottom margins remain 0, left and right set to auto */
+}
+
+#read-more {
+    background-color: #333;
+    color: white;
 }
 
 .manual-content h1 {
@@ -21,7 +35,6 @@ body, h1, h2, p {
 
 .manual-content p {
     line-height: 1.6;
-    margin-bottom: 1.5rem;
 }
 
 /* Section Titles */
@@ -65,43 +78,7 @@ body, h1, h2, p {
     }
 }
 
-/* Parallax Header */
-.parallax {
-    background-attachment: fixed;
-    background-size: cover;
-    padding: 5rem 1rem;
-    color: white;
-    text-align: center;
-}
-
-.header-content {
-    padding-top: 3rem;
-}
-.header-content h1 {
-    font-size: 2.5rem;
-    text-align: center;
-}
-
-.header-content p {
-    text-align: center;
-}
-
-/* Navigation */
-.navbar a {
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-}
-
-
-
-
-.collapsible {
-    cursor: pointer;
-    font-weight: bold;
-    color: #333;
-}
-.content1 {
+.content {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease, padding 0.3s ease;

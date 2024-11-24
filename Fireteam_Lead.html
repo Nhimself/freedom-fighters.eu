@@ -4,27 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freedom Fighters - Fireteam Lead</title>
-    <link rel="stylesheet" href="static/css/styles_old.css">
+    <link rel="stylesheet" href="static/css/styles.css">
     <link rel="stylesheet" href="static/css/training.css">
-    <script src="static/js/active_link.js"></script>
     <script src="static/js/quiz.js"></script>
 </head>
 <body>
     <!-- Header with Navigation Links -->
     <header>
-        <nav class="navbar">
-            <a href="index.html" class="logo">Freedom Fighters</a>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="training.html">Training Manuals</a>
-                <!--a href="server-guide.html">Server Connection Guide</a>
-                <a href="mods-overview.html">Mods Overview</a-->
-            </div>
-            <button class="menu-toggle" aria-label="Toggle menu">
-                &#9776; <!-- Hamburger icon for mobile menu -->
-            </button>
-        </nav>
+        <div class="logo">
+          <img src="media/logo.png" alt="Freedom Fighters Logo">
+        </div>
+        <button class="hamburger" aria-label="Toggle navigation">
+          ☰
+      </button>
+        <nav>
+       <ul id="menu" class="menu">
+           <li><a href="index.html" target="_self">Home</a></li>
+           <li><a href="mods-overview.html" target="_self">Mods Overview</a></li>
+           <li><a href="server-guide.html" target="_self">Server Guide</a></li>
+           <li><a href="training.html" class="active" target="_self">Training</a></li>
+           <li><a href="https://discord.gg/2EjZr5YkeB" class="enlist" target="_blank">Enlist</a></li>
+       </ul>
+   </nav>
     </header>
+
     <!-- Main Content for Basic Infantry Training -->
     <main class="manual-content">
         <!-- Section: Fireteam Lead Introduction -->
@@ -375,9 +378,11 @@
             </div>
         </section>
     </main>
+    <script src="static/js/script.js"></script>
+    <script src="static/js/mobile.js"></script>
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Freedom Fighters | <a href="https://freedom-fighters.eu">freedom-fighters.eu</a></p>
+        &copy; 2024 Freedom Fighters | <a href="https://freedom-fighters.eu">freedom-fighters.eu</a> | <a href="http://www.stefandinca.ro" target="_blank"><img src="media/stefan-dinca-logo.png" > </a>
     </footer>
 </body>
 </html>
