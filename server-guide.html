@@ -6,30 +6,58 @@
     <title>Freedom Fighters - Server Connection Guide</title>
     <link rel="stylesheet" href="static/css/styles.css">
     <link rel="stylesheet" href="static/css/training.css">
+    <link rel="stylesheet" href="static/css/server-guide.css">
     <script src="static/js/quiz.js"></script>
 </head>
 <body>
-
     <!-- Header with Navigation Links -->
     <header>
-        <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="training.html">Training Program</a>
-            <a href="server-guide.html">Server Connection Guide</a>
-            <a href="mods-overview.html">Mods Overview</a>
-        </nav>
+        <div class="logo">
+          <img src="media/logo.png" alt="Freedom Fighters Logo">
+        </div>
+        <button class="hamburger" aria-label="Toggle navigation">
+          ☰
+      </button>
+        <nav>
+       <ul id="menu" class="menu">
+           <li><a href="index.html" target="_self">Home</a></li>
+           <li><a href="mods-overview.html" target="_self">Mods Overview</a></li>
+           <li><a href="server-guide.html" target="_self">Server Guide</a></li>
+           <li><a href="training.html" class="active" target="_self">Training</a></li>
+           <li><a href="https://discord.gg/2EjZr5YkeB" class="enlist" target="_blank">Enlist</a></li>
+       </ul>
+   </nav>
     </header>
 
-    <!-- Main Content for Server Guide -->
-    <main class="server-guide">
-        <h1>Server Connection Guide</h1>
-        <p>Learn how to join our server, download necessary mods, and get set up for seamless gameplay.</p>
-        
-        <h2>Steps to Connect</h2>
-        <ol>
-            <li>Download and install the required mods (see <a href="mods-overview.html">Mods Overview</a>).</li>
-            <li>Open Arma Reforger and enter the following server details...</li>
-        </ol>
+
+    <main class="guide-content">
+        <section class="steps">
+            <h1>🎮 Server Connection Guide 🎮</h1>
+            <p>Follow the steps below to join the fun!</p>
+            <ol>
+                <li>
+                    <strong>Install ARMA Reforger:</strong> 
+                    <a href="https://reforger.armaplatform.com/buygame">Buy from the official website</a> or get it from the 
+                    <a href="https://store.steampowered.com/app/1874880/Arma_Reforger/" target="_blank">Steam Store</a>.
+                </li>
+                <li><strong>Start the Game:</strong> Launch ARMA Reforger and select "Multiplayer."</li>
+                <li>
+                    <strong>Find the Server:</strong> Search for 
+                    <code>freedom-fighters.eu/Reforger</code> in the server browser.
+                </li>
+                <li><strong>Select the Server:</strong> Highlight it in the list on the left.</li>
+                <li><strong>Enter the Password:</strong> Use the password provided on Discord.</li>
+                <li>
+                    <strong>Download Required Mods:</strong> The game will automatically download and install mods. 
+                    For details, visit the <a href="mods-overview.html">Mods Overview</a> page.
+                </li>
+                <li><strong>Restart (if Needed):</strong> If prompted, restart the game after downloading mods.</li>
+                <li><strong>Join the Mission:</strong> Load into the basic training mission on the server.</li>
+                <li>
+                    <strong>Set Up Voice Chat:</strong> Adjust your in-game sound settings and bind a key for voice communication.
+                </li>
+            </ol>
+        </section>
     </main>
     <script src="static/js/script.js"></script>
     <script src="static/js/mobile.js"></script>

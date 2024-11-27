@@ -1,0 +1,81 @@
+/* General Reset */
+
+
+/* Header */
+.guide-content {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: rgba(0, 0, 0, 0.6);
+    border-bottom: 2px solid #EF6121;
+    margin-top: 90px;
+}
+
+.guide-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.guide-content p {
+    font-size: 1.2rem;
+}
+
+/* Main Content */
+.guide-content {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    margin: 2rem auto;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 90px;
+}
+
+/* Steps Section */
+.steps h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.steps ol {
+    list-style: decimal;
+    padding-left: 1.5rem;
+    margin: 0 auto;
+}
+
+.steps li {
+    margin: 1rem 0;
+    line-height: 1.8;
+    text-align: left;
+}
+
+.steps li strong {
+    font-family: 'Jaro';
+    font-size: 16px;
+    color: #ffdd57;
+}
+
+
+/* Links */
+a {
+    color: #EF6121;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
