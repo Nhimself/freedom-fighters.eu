@@ -80,7 +80,7 @@ main.manual-content {
 }
 
 .content {
-    max-height: 0;
+    /*max-height: 0;*/
     overflow: hidden;
     transition: max-height 0.5s ease, padding 0.3s ease;
 }
@@ -145,4 +145,78 @@ main.manual-content {
     font-size: 0.9rem;
     white-space: nowrap;
     border-radius: 4px;
+}
+
+/* mod list style */
+.mods-overview {
+    padding-top: 10rem;
+}
+.mods-overview h1 {
+    font-family: 'Bayon', sans-serif;
+    font-size: 128px !important; /* Adjust size as needed for desired effect */
+    line-height: 0.9;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.mods-overview p {
+    text-align: center;
+}
+.mod-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+    margin: 1%;
+}
+.mod-box {
+    background-color: #505331;
+    border: 1px solid #717453;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.mod-box:hover {
+    transform: scale(1.05);
+}
+.mod-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.mod-header a {
+    text-decoration: none;
+    color: #EF6121;
+}
+.mod-header a:hover {
+    text-decoration: underline;
+}
+.mod-details {
+    margin-top: 10px;
+    font-size: 14px;
+}
+.mod-details li {
+    margin-bottom: 5px;
+}
+.tags {
+    font-style: italic;
+    color: #ffffff;
+}
+.dependencies {
+    margin-top: 10px;
+}
+.dependencies li {
+    margin-bottom: 5px;
+}
+.mod-details li {
+    margin-bottom: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* Limits the text to 3 lines */
+    -webkit-box-orient: vertical;
+    height: 4.5em; /* Adjust based on your font size and line height */
+    line-height: 1.5em; /* Ensures consistent line spacing */
 }

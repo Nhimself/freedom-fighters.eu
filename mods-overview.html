@@ -9,27 +9,1235 @@
     <script src="static/js/quiz.js"></script>
 </head>
 <body>
-
     <!-- Header with Navigation Links -->
     <header>
-        <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="training.html">Training Program</a>
-            <a href="server-guide.html">Server Connection Guide</a>
-            <a href="mods-overview.html">Mods Overview</a>
-        </nav>
+        <div class="logo">
+          <img src="media/logo.png" alt="Freedom Fighters Logo">
+        </div>
+        <button class="hamburger" aria-label="Toggle navigation">
+          ☰
+      </button>
+        <nav>
+       <ul id="menu" class="menu">
+           <li><a href="index.html" target="_self">Home</a></li>
+           <li><a href="mods-overview.html" target="_self">Mods Overview</a></li>
+           <li><a href="server-guide.html" target="_self">Server Guide</a></li>
+           <li><a href="training.html" class="active" target="_self">Training</a></li>
+           <li><a href="https://discord.gg/2EjZr5YkeB" class="enlist" target="_blank">Enlist</a></li>
+       </ul>
+   </nav>
     </header>
 
     <!-- Main Content for Mods Overview -->
     <main class="mods-overview">
         <h1>Mods Overview</h1>
         <p>Below is a list of mods we use to enhance realism and gameplay. Click on each mod to learn more or download.</p>
-        
-        <ul class="mods-list">
-            <li><a href="mod-link-1">Mod 1: Realistic Weapons Pack</a> - Adds a selection of realistic weapons.</li>
-            <li><a href="mod-link-2">Mod 2: Enhanced Terrain</a> - Improves terrain features for better tactical realism.</li>
-            <!-- Add other mods as needed -->
-        </ul>
+        <div class="mod-container">
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/606B100247F5C709" target="_blank">Bacon Loadout Editor</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Primarily intended to customize weapons, provides a refreshing character loadout experience</li>
+                        <li><strong>Description:</strong> Primarily intended to customize weapons, provides a refreshing character loadout experience. Currently several bugs in the game prevent it from saving/loading loadouts.</li>
+                                                 <li><strong>Dependencies:</strong> None</li>
+                        <li><strong>Tags:</strong> <span class="tags">bacon, editor, loadout, misc, systems</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/5994AD5A9F33BE57" target="_blank">Game Master FX</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Adds explosions, fire, parachute flare and smoke effects to Game Master</li>
+                        <li><strong>Description:</strong> - 4 Explosion Effects - 7 Smoke Effects - 3 Fire Effects - 2 Parachute Flare Effects - 5 Artillery Shell Effects and Barrage Systems - 2 Mines - 2 Sounds (Sirens) - 5 Destructible Props - 2 Gas Clouds Mine Sweeper model: 11TH AB - CPT. Nomad 1.0.60: dummy update for sync purposes 1.0.59: Update for game version 1.0.58: Removed arland debug stuff 1.0.57: AP mine origin a little higher 1.0.56: AP mine has bigger hitbox now 1.0.55: Flag action fix maybe 1.0.54: Mines might be fixed 1.0.53: Disabled mines until I fix them 1.0.52: compatibility update 1.0.51: added lights to Large and Huge explosions 1.0.50: AT mines now kill driver and gunner to avoid the teamkill issue 1.0.48-1.0.49: Mine tweaks - let's try setting vehicles on fire with AT mines. 1.0.47: Tweaking mines again. Let me know if they are worse. Added new siren. Added two destructible radar props. 1.0.46: Mine collisions set to static - should no longer float away into space. Added air raid siren. Increased smoke size and lens flares of flare effects. 1.0.45: Holidays are over :( 1.0.39: Bringing Large and Huge explosion sounds into game version 0.9.7 1.0.38: Attempt to reduce possible entity browser filter conflicts with other mods. 1.0.37: Doubled AT mine damage. 1.0.34-36: Added two mines. 1.0.33: Fixed crash in spawning medium artilllery due to incorrect warhead prefab. 1.0.32: Fixed some artillery projectiles not showing up. Removed penetrator from medium artillery so it does not instantly destroy a BTR. 1.0.31: Barrage range max 150 meters, all explosion damage significantly increased (large and huge can destroy vehicles now)</li>
+                                                 <li><strong>Dependencies:</strong> None</li>
+                        <li><strong>Tags:</strong> <span class="tags">artillery, explosions, fire, flare, fx, game, master, smoke, systems</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/5964E0B3BB7410CE" target="_blank">Game Master Enhanced</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Game Master Enhanced (GME), formerly known as Odin's Game Master Additions, is an Arma Reforger mod aimed at improving and expanding the functionality of the Game Master real-time editor.</li>
+                        <li><strong>Description:</strong> Game Master Enhanced (GME), formerly known as Odin's Game Master Additions, is an Arma Reforger mod aimed at improving and expanding the functionality of the Game Master real-time editor. GME is built with communities who use Game Master as their primary mission making tool in mind by enabling them with powerful tools to create dynamic scenarios in an efficient manner. Features: - Makes saving/loading of scenarios available in MP (PC only). - Context action to teleport a player to their group leader. - Toggle damage and visibility of objects. - Formation, stance and skill attributes for AI. - Cycle waypoint to make AI move in repeated patterns. - Waypoint radius and completion attributes. Contributing: You can help out with the ongoing development by looking for potential bugs in our code base, or by contributing new features. We are always welcoming new pull requests containing bug fixes, refactors and new features. We have a list of tasks and bugs on our issue tracker on GitHub ( https://github.com/zen-mod/GME_AR ). Please comment on issues you want to contribute with, to avoid duplicating effort. Submitting Issues and Feature Requests: Please use our Issue Tracker to report a bug, propose a feature, or suggest changes to the existing ones: https://github.com/zen-mod/GME_AR/issues .</li>
+                                                 <li><strong>Dependencies:</strong> None</li>
+                        <li><strong>Tags:</strong> <span class="tags">editor, systems, zeus</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/5CE334EA7649C7CC" target="_blank">Game Master Safe Zones</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Testing faction-based placeable safe zones</li>
+                        <li><strong>Description:</strong> todo: add vehicles 1.0.6: shape resolution capped at 60 1.0.5: max radius 32->48 1.0.4: JIP/streaming sync of radius fixes 1.0.3: fixed inverted state of damage handling 1.0.2: fixed radius not updating in multiplayer 1.0.1: - deleting zone will also delete god mode - added radius slider - faction of zone can now be changed (in case you have custom factions)</li>
+                                                 <li><strong>Dependencies:</strong> None</li>
+                        <li><strong>Tags:</strong> <span class="tags">bacon, game, master, protection, safe, spawn, systems, zone</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/5F2944B7474F043F" target="_blank">Disable Game Master Budgets</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Toggle GM budgets on and off (default on)</li>
+                        <li><strong>Description:</strong> Also known as the Server Crasher 3000</li>
+                                                 <li><strong>Dependencies:</strong> None</li>
+                        <li><strong>Tags:</strong> <span class="tags">bacon, budget, disable, game, master, misc</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/5D6EBC81EB1842EF" target="_blank">Enfusion Persistence Framework</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> A framework to save and load the world state in Enfusion engine powered games.</li>
+                        <li><strong>Description:</strong> A framework to save and load the world state in Enfusion engine powered games. This framework is built on top of the Enfusion Database Framework. The persistence logic is responsible for collecting and translating the world state (relevant game entities and scripted instances) into DB entities which the DB framework can then store. On server restart all changes from the last session are requested from the DB and the save-data is applied back onto the world so players can continue to play. GitHub: https://github.com/Arkensor/EnfusionPersistenceFramework</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/5D6EA74A94173EDF-EnfusionDatabaseFramework" target="_blank">Enfusion Database Framework</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">persistence, savefiles, systems</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/5D6EA74A94173EDF" target="_blank">Enfusion Database Framework</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> A database framework to connect the Enfusion engine with SQL-, document- and local file databases.</li>
+                        <li><strong>Description:</strong> A database framework to connect the Enfusion engine with SQL-, document- and local file databases. GitHub: https://github.com/Arkensor/EnfusionDatabaseFramework</li>
+                                                 <li><strong>Dependencies:</strong> None</li>
+                        <li><strong>Tags:</strong> <span class="tags">database, mongodb, mysql, systems</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/5965550F24A0C152" target="_blank">Where Am I</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Shows where you are on the map</li>
+                        <li><strong>Description:</strong> This is a simple mod that marks your current location on the map with a red circle. There is also a button in the top toolbar that will center the map on you. It will apply to any gamemode/mission as long as the mod is enabled.</li>
+                                                 <li><strong>Dependencies:</strong> None</li>
+                        <li><strong>Tags:</strong> <span class="tags">easy, gps, misc, simple</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/61791838E28F4C5C" target="_blank">Colored Chat Message Roles</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Adds colored Admin and GM chat roles</li>
+                        <li><strong>Description:</strong> Thanks to Bacon for the Chat Message Roles Thanks to Oxyode for the Colored Effects on the Roles</li>
+                                                 <li><strong>Dependencies:</strong> None</li>
+                        <li><strong>Tags:</strong> <span class="tags">systems</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/5B0D1E4380971EBD" target="_blank">COALITION Squad Interface</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> An all encompassing squad interface that adds better nametags, group display, a squad radar with color teams, stamina bar, and configurable settings for both players and server admins.</li>
+                        <li><strong>Description:</strong> CSI - (Coalition Squad Interface) aims to replicate and expand upon all systems seen in ShakTac and DUI. This mod is currently under active development. Note: - Please make sure you dont have any other nametag editing mod loaded! Current Features: - Compass - Stamina Bar - Group Display with Color Teams - Ability to hide all UI elements with keybinds - Squad Radar - Ability to override settings/what's displayed from the server - Nametags with Group Name and Color Team Translations Provided By: - Pi123263 - Pokertour Created by: Njpatman, Tanaka, StalinForPresident, and Leo for use in Coalitions server. Feel free to use it in your own server if you want! You can find us here: discord.gg/the-coalition</li>
+                                                 <li><strong>Dependencies:</strong> None</li>
+                        <li><strong>Tags:</strong> <span class="tags">characters, csi, effects, misc, systems</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/5F268647F8A1A1F4" target="_blank">CRX Enfusion A.I.</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> * ---------------------------------------------------------------- * Arma Reforger: CRX Enfusion A.I. Modification * ----------------------------------------------------------------</li>
+                        <li><strong>Description:</strong> Arma Reforger CRX Enfusion A.I. ===================================================== A.I. modification based on latest 1.2.0.124 stable version. A.I. Base System: ----------------------------------------------------- Tba A.I. Feature Systems: ----------------------------------------------------- - A.I. Rank & Skill System - A.I. Combat Movement System A.I. Combat Systems: ----------------------------------------------------- Tba A.I. Game Master GUI: ----------------------------------------------------- - A.I. Rank GUI - A.I. Formation GUI - A.I. Perception GUI - A.I. Investigate GUI - A.I. Combat System GUI - A.I. Aim Accuracy Error GUI - A.I. Attack Reaction Delay GUI - A.I. Force Flashlight State GUI - A.I. Global Settigs Override GUI - A.I. Weapon Fire Reaction Distance GUI</li>
+                                                 <li><strong>Dependencies:</strong> None</li>
+                        <li><strong>Tags:</strong> <span class="tags">ai, bot, crx, eai, misc, npc, systems</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/5C73156675E11A0F" target="_blank">GM Persistent Loadouts</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Persists Loadouts on Game Master Servers</li>
+                        <li><strong>Description:</strong> Loadouts are written to $profile/GMPersistentLoadouts They are bound to the Identity ID and loaded when a player chooses their faction. 1.0.11: Removed the loadout size limit 1.0.10: Fix for Fix GM blacklist menu 1.0.9: Fix GM blacklist menu 1.0.8: Compatibility update 1.0.7: Compatibility update 1.0.6: Loadouts of length higher than 65500 are no longer saved due to a potential crash 1.0.5: Changed conditional for file handle 1.0.4: Added a conditional for loadout string being empty 1.0.3: Added a conditional for failure to open files 1.0.2: Trying to patch an obscure bug that may or may not be serious</li>
+                                                 <li><strong>Dependencies:</strong> None</li>
+                        <li><strong>Tags:</strong> <span class="tags">arsenal, bacon, loadouts, misc, persistent</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/5E389BB9F58B79A6" target="_blank">SpaceCore</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> A core mod that includes scripts used in all of my mods.</li>
+                        <li><strong>Description:</strong> Created to easily consolidate all of my scripts and make updating them easier. A big thanks to Bacon for letting me use his scripts. Thank you to Ram for allowing me to use a few of his scripts as well!</li>
+                                                 <li><strong>Dependencies:</strong> None</li>
+                        <li><strong>Tags:</strong> <span class="tags">misc</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/6088A3044B7ECBFD" target="_blank">Keep Gun When Uncon</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Tries to holster gun when going unconscious</li>
+                        <li><strong>Description:</strong> Implementation originally created by R34P3R, modified.</li>
+                                                 <li><strong>Dependencies:</strong> None</li>
+                        <li><strong>Tags:</strong> <span class="tags">bacon, gun, keep, misc, uncon</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/5D0551624969C92E" target="_blank">Zeliks Character</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Released under (APL-ND) meaning NO DERIVATIVES Mod is to be used as a dependency, no altering of core files.</li>
+                        <li><strong>Description:</strong> If you are not a modder don't bother downloading, no assets are included.</li>
+                                                 <li><strong>Dependencies:</strong> None</li>
+                        <li><strong>Tags:</strong> <span class="tags">attachment, character, characters, misc, slots, systems, zelik</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/5E92F5A4A1B75A75" target="_blank">Player Map Markers</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Marks players and vehicles occupied by players on the map.</li>
+                        <li><strong>Description:</strong> Marks players and vehicles occupied by players on the map. Inspired by the conventions used by Spoffy in Mike Force in Arma 3. Feedback tracker: https://github.com/Kexanone/ArmaReforgerMods/issues Source Code: https://github.com/Kexanone/ArmaReforgerMods/tree/main/addons/PVEPlayerMapMarkers</li>
+                                                 <li><strong>Dependencies:</strong> None</li>
+                        <li><strong>Tags:</strong> <span class="tags">map, marker, player, systems</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/623EEDF242F6265E" target="_blank">Gogland</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Gogland</li>
+                        <li><strong>Description:</strong> Real island Fictional layout</li>
+                                                 <li><strong>Dependencies:</strong> None</li>
+                        <li><strong>Tags:</strong> <span class="tags">terrains</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/591AF5BDA9F7CE8B" target="_blank">Capture & Hold</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Join teams of players and the fight for Everon in Capture & Hold, an official multiplayer game mode.</li>
+                        <li><strong>Description:</strong> Engage in close-quarters combat, secure key objectives, and hold your ground against opponents in this collection of fast-paced, team versus team scenarios. Created by Bohemia Interactive, Capture & Hold is the ideal addon for those players that enjoy quick and decisive battles.</li>
+                                                 <li><strong>Dependencies:</strong> None</li>
+                        <li><strong>Tags:</strong> <span class="tags">action, capture, control, faction, gamemode, hold, multiplayer, objective, scenarios_mp, sector, seize, systems, tactical</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/62952497125C5F6A" target="_blank">Freedom Fighters Base Camp</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Freedom Fighters Base Camp</li>
+                        <li><strong>Description:</strong> re-upload</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/606B100247F5C709-BaconLoadoutEditor" target="_blank">Bacon Loadout Editor</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">mp, pc, scenarios_mp, scenarios_sp, sp</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/5A56FA0AC53F8C80" target="_blank">ChernarusReforged</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Chernarus Reforged</li>
+                        <li><strong>Description:</strong> Chernarus Reforged is Chernarus in Arma reforger more or less its still being worked on but is currently sitting on a playable size as big as Arland Custom Buildings are already there, and more to come. Thanks CyborgMatt for all the help with Error fixes.</li>
+                                                 <li><strong>Dependencies:</strong> None</li>
+                        <li><strong>Tags:</strong> <span class="tags">terrains</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/61232176C85B8C44" target="_blank">TFG Wolf Islands</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Tropical Islands Inspired By Arma 3 Tanoa,</li>
+                        <li><strong>Description:</strong> The Islands has military bases, Prisons, caves, airports & More.</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/5CB6E1FA81C7B8D5-PoliceDepartment" target="_blank">Police Department</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/5D84C738432BFE6A-WolfsBuildingPack" target="_blank">WolfsBuildingPack</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/5E1735DB431EE29B-GulfcoastBuildings" target="_blank">Gulfcoast Buildings</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/5E8EB849F3CF691C-ML_Eastern_European_Assets" target="_blank">ML_Eastern_European_Assets</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/5EFB27AF9491B331-MMHsIVY" target="_blank">MMHs IVY</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">force, gaming, islands, map, task, terrains, tropical, wolf</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/61B514B96692C049" target="_blank">ConflictPVERemixedVanilla2.0</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Conflict PVE Remixed Vanilla US (players) vs USSR (ai)</li>
+                        <li><strong>Description:</strong> Conflict PVE Remixed Vanilla US (players) vs USSR (ai) Requires: - no dependencies Features: - Many cap points moved into the towns they're near - Many new cap points, even on the islands! - Counter attacks! - AI driving patrols! - Civilians! - No stamina custom loadouts for US - Higher rank lock for helis - Save any faction items in arsenals - 1Km name tags - Votekick requires 50% to succeed - Server-side saves "work" using -loadSessionSave parameter when launching your server (still experimantal) Discord to report issues/feedback/donate: f2Ze6vU</li>
+                                                 <li><strong>Dependencies:</strong> None</li>
+                        <li><strong>Tags:</strong> <span class="tags">conflict, pve, remixed, scenarios_mp, scenarios_sp</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/60C4E0B49618CC62" target="_blank">ACE All in One</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> ACE Anvil is an experimental realism mod for Arma Reforger. This mod provides a one-click solution for subscribing and loading all ACE mods.</li>
+                        <li><strong>Description:</strong> Details for this mod can be found in our documentations: https://anvil.acemod.org/components/all-in-one/</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/5DBD560C5148E1DA-ACECarrying" target="_blank">ACE Carrying</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/5EB744C5F42E0800-ACEChopping" target="_blank">ACE Chopping</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/606C369BAC3F6CC3-ACEFinger" target="_blank">ACE Finger</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/60C4C12DAE90727B-ACEMedical" target="_blank">ACE Medical</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/60C4CE4888FF4621-ACECore" target="_blank">ACE Core</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/60C53A9372ED3964-ACECompass" target="_blank">ACE Compass</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/60E573C9B04CC408-ACEBackblast" target="_blank">ACE Backblast</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/60EAEA0389DB3CC2-ACETrenches" target="_blank">ACE Trenches</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">advanced, anvil, combat, environment, realism, systems</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/611CB1D409001EB0" target="_blank">ACE Magazine Repack</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Magrepack provides players with the ability to repack magazines.</li>
+                        <li><strong>Description:</strong> Details for this mod can be found in our documentations: https://anvil.acemod.org/components/magrepack/</li>
+                                                 <li><strong>Dependencies:</strong> None</li>
+                        <li><strong>Tags:</strong> <span class="tags">advanced, anvil, combat
+            environment, realism, systems</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header">HMMWV  VARIANTS PACK (No additional details available)</div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/5D1880C4AD410C14" target="_blank">M1 Abrams</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Contains the M1A1 and M1A2 with both TUSK upgrade kits.</li>
+                        <li><strong>Description:</strong> M1 Abrams with the A1, A2, Tusk I and Tusk II varients. To select next round for reload just drag the desired round into the turret inventory. Want to support my work and see more behind the scenes content? Follow me on Patreon at patreon.com/SpaceStrider !</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/5E389BB9F58B79A6-SpaceCore" target="_blank">SpaceCore</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">abrams, tank, usa, vehicles</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/612F4C04CFF9B1C4" target="_blank">BradleyFix</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Attempts to fix some bugs of the M2 Bradley mod. And adds RHS periscopes to the bradley. https://docs.rhsmods.org/rhs-status-quo-user-documentation/arma-reforger/rhs-status-quo</li>
+                        <li><strong>Description:</strong> Attempts to fix some bugs of the M2 Bradley mod such as the server crashes. And adds RHS periscopes to the bradley as well as RHS gunner nightvision. https://docs.rhsmods.org/rhs-status-quo-user-documentation/arma-reforger/rhs-status-quo -Thanks to Spacestriders Spacecore as that is used to make some of the turnout animation -Contact #tonimontana on discord</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/595F2BF2F44836FB-RHS-StatusQuo" target="_blank">RHS - Status Quo</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/5E193315C8E82019-M2BradleyFightingVehicle" target="_blank">M2 Bradley Fighting Vehicle</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">vehicles</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/5E193315C8E82019" target="_blank">M2 Bradley Fighting Vehicle</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> M2 Bradley Fighting Vehicle Contains: M2A2 OD Green M2A2 Desert M2A2 MERDC</li>
+                        <li><strong>Description:</strong> The Bradley Fighting Vehicle (BFV) is a tracked armoured fighting vehicle platform of the United States developed by FMC Corporation and manufactured by BAE Systems Land & Armaments, formerly United Defense. The BFV is named after U.S. General Omar Bradley. The Bradley is designed to transport infantry or scouts with armor protection, while providing covering fire to suppress enemy troops and armored vehicles. This mod contains the M2A2 variant of the BFV in OD Green, Desert, and MERDC camo patterns.  Currently sporting a 25mm Bushmaster Chaingun firing HEI-T, an M240D firing 7.62 AP, and a TOW launcher firing TOW II missiles.</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/5AAF6D5352E5FCAB-ProjectRedline-Core" target="_blank">Project Redline - Core</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/5E389BB9F58B79A6-SpaceCore" target="_blank">SpaceCore</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/5F1EE615E7AE3106-BGONE" target="_blank">BGONE</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">ifv, tracked, us, vehicles</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/61D702195F9E12C1" target="_blank">M2 Bradley - Revival Edit</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Re-Upload of the BradleyFix. TESTING</li>
+                        <li><strong>Description:</strong> Work in Progress. Probably not working fully yet</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/5E193315C8E82019-M2BradleyFightingVehicle" target="_blank">M2 Bradley Fighting Vehicle</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/612F4C04CFF9B1C4-BradleyFix" target="_blank">BradleyFix</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">vehicles</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/5C961A93A16EB866" target="_blank">British Armed Forces Vehicles</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Royal Marine vehicle pack for 42 Commando. Models provided by Recce Green.</li>
+                        <li><strong>Description:</strong> Currently contains the AH-64 Mk1 Apache, CH-47 Chinook, Jackal and MRZR. You can find the 42 Commando Royal Marines down below: https://discord.gg/zUthHNBGqp</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/5CCCC1DFB9C93581-AH-64DApache" target="_blank">AH-64D Apache</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">armed, british, forces, vehicles</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/605E3A755084A345" target="_blank">HumveeVariants4Conflict</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Humvee Variants for Conflict game mode</li>
+                        <li><strong>Description:</strong> Humvee variants for Conflict game mode. adds them to the motor pool. requires "Humvee Variants" mod available here: https://reforger.armaplatform.com/workshop/5D9ECAD071E9ECBC-HUMVEEVARIANTSPACK</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/5D9ECAD071E9ECBC-HMMWVVARIANTSPACK" target="_blank">HMMWV  VARIANTS PACK</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">conflict, humvee, variants, vehicles</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/61031068D8E95AEB" target="_blank">M1070-Fix</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Reupload of SpaceStriders M1070s mod. Sadly without towing</li>
+                        <li><strong>Description:</strong> Reupload of SpaceStriders M1070s mod. Sadly without towing. Only includes a varaint with a fixed container and no towing.</li>
+                                                 <li><strong>Dependencies:</strong> None</li>
+                        <li><strong>Tags:</strong> <span class="tags">m1070, vehicles</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/5CCCC1DFB9C93581" target="_blank">AH-64D Apache</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Adds the AH-64D Apache Longbow to the game. Highly WIP</li>
+                        <li><strong>Description:</strong> The AH-64D is an attack helicopter developed by Boeing Defense, equipped with advanced avionics and weapons systems for all-weather, day and night operations. It features a four-blade main rotor and a tail rotor, and can carry a variety of weapons, including rockets, missiles, and a 30mm chain gun. Want to support my work and see more behind the scenes content? Follow me on Patreon at patreon.com/SpaceStrider !</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/5E389BB9F58B79A6-SpaceCore" target="_blank">SpaceCore</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/5F1EE615E7AE3106-BGONE" target="_blank">BGONE</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">apache, helicopter, vehicles</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/62990B6623136209" target="_blank">British Community Common</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> A common mod for the british community</li>
+                        <li><strong>Description:</strong> A common mod for the british community adding a british faction and various scripts</li>
+                                                 <li><strong>Dependencies:</strong> None</li>
+                        <li><strong>Tags:</strong> <span class="tags">misc</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/5E8CA06EE59E7F13" target="_blank">Prontos Brit Kit</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Collection of British kit, issued and private purchase.</li>
+                        <li><strong>Description:</strong> Although under an APL-ND license, I will allow the use of this addon to be used as a dependency to modify the neccessery files to allow for use in; modded faction/arsenal boxes,custom server configs and improvement mods such as sounds, animations, realism.</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/5D0551624969C92E-ZeliksCharacter" target="_blank">Zeliks Character</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/62990B6623136209-BritishCommunityCommon" target="_blank">British Community Common</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">characters, compositions, effects, misc, props, systems, weapons</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/60C40CDB56C23C6B" target="_blank">vPad</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Replaces map w/ functional minimap... VilaskisPad - (vPad for short) is a rugged tablet with GPS positioning system. Running on experimental GlutenOS (gOS) software.</li>
+                        <li><strong>Description:</strong> 1.1.72 Update: + Update for 1.2.0.92 Update + New markers * Added player markers * Fixed group markers Function * Changes map with vPad (tablet) * vPad is a usable minimap (doesn't open full map) * Usable when jogging and driving * Center mode (locks player to center of minimap) * Panning minimap Lore VilaskisPad - (vPad for short) is a rugged handheld tablet with GPS positioning system. VIL-SPEC-810G environement resistance Certified. VilP (Vilaskis Protection) VP68/VP69K dust and water proof Certified. Running on experimental GlutenOS (gOS) software. CONTROLS Keyboard:Default arrow keys to pan minimap, rebindable in controls. Controller:Y + D-pad(arrows), rebindable in controls The binds will block other inputs when the minimap is open Credits: Vilaskis, GlutenFreeVapes https://forums.bohemia.net/forums/topic/282894-vpad-functional-minimap-rugged-tablet/ ...older updates... 1.1.71 Update: + TEST Update for 1.2 Game + some wip test code (buggy markers etc?) 1.1.6 Update: + Map marker fix (for combat ops markers) 1.1.5 Update: + update to game version 1.1 (13 Mar 2024) + Map Marker aspect ratio fix 1.1.4 Update: + Map Marker FPS drop fix 1.1.3 Update: + Map Marker Test 1.1.2 Update: + Fix minimap breaking after traveling 2km 1.1.0 Update: + Add Options to help using vPad while driving/piloting + fix vPad now centered when opening + fix full map bugged when opening + Add option (enabled by default) to tap for minimap, hold for map + Added keybind to instantly go to gOS settings from minimap + can be disabled in settings + fix text chat not working with minimap + text chat will now block minimap inputs + fix full map zoom based on vPad zoom + now full map zoom is saved and loaded when opening/closing it + fix minimap going away when using gas pedal(right trigger) on a controller + this can be disabled in the settings + fix brightness with NVG + added option to change vPad brightness + keyboard keybind to change brightness + Settings + added options menu tab for gOS + Option to disable panning + Option to disable zooming + new default keybind for controller: * Hold Y to pan using D-Pad * press B to center (in future reforger update, controllers can change keybinds)</li>
+                                                 <li><strong>Dependencies:</strong> None</li>
+                        <li><strong>Tags:</strong> <span class="tags">gps, misc, systems, vpad</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/61F556B3A0EEB369" target="_blank">TFTB Rhs Arsenal edit</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Adds rhs items to us/ussr/fia arsenals. Adds Sierra Golf veritas items to US arsenal All credits to Sierra Golf team All credits to RHS team</li>
+                        <li><strong>Description:</strong> Adds Sierra golf and rhs items to us arsenals, nothing else has been changed on the mods. Made for Tactical Barbie servers. Any issues contact .gg/tacticalbarbies This mod is licensed under Arma Public</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/595F2BF2F44836FB-RHS-StatusQuo" target="_blank">RHS - Status Quo</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/5AB301290317994A-Suppressors" target="_blank">Suppressors</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/5ABD0CB57F7E9EB1-RISLaserAttachments" target="_blank">RIS Laser Attachments</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/5D0551624969C92E-ZeliksCharacter" target="_blank">Zeliks Character</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/5E8CA06EE59E7F13-ProntosBritKit" target="_blank">Prontos Brit Kit</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">characters, vehicles, weapons</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/59673B6FBB95459F" target="_blank">BetterTracers 2.0</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> More Visible And Beautiful Tracers</li>
+                        <li><strong>Description:</strong> More Visible And Beautiful Tracers v2.0.3 Tracers now gets "longer" depends on velocity, added pre-burn time and now all tracers lasts 2 seconds v2.0.0 Initial realsease of remake of BT - Enhanced tracer bounce physics, Realistic burnt decals, Stunning visuals, Improved performance. Im gathering feedback - my discord ashyl1. Thanks! If you want to support my work - boosty.to/suvwar //v2.0.2 Fixed relative LV //v2.0.1 Hotfix of multiply particles spawn on penetration //v2.0.0 Initial realsease of remake of BT - Enhanced tracer bounce physics, Realistic burnt decals, Stunning visuals, Improved performance //v1.3.0 Great optimization, improvments //v1.2.8 Hotfix //v1.2.7 Dynamic light improvments 2 //v1.2.6 Dynamic light improvments //v1.2.5 Tweaks //v 1.2.4 Description update //v 1.2.3 Shadow fixed and intenstity of bounced tracer reduced //v 1.2.2 Fixes //v 1.2.1 Update and fixes for 1.0 Arma Reforger update //v 1.1.10 Probably fixed compability with RHS + tweaks //v 1.1.9 Particles improvment, sound of burn added //v 1.1.8 Big update, now tracers light visible at day, new cool ricochet effect, 7,62x39 tracer added //v 1.1.7 Reduced glow //v 1.1.6 Shadow fix - thanks bacon#8008. effects improvment and tweaks //v 1.1.5 Large Caliber Effects improvment //v 1.1.4 Added 7,62x39 tracer effects //v 1.1.3 Ricochet tracers are now dynamic light. //v 1.1.2 Hotfix //v 1.1.1 Added dynamic light for tracers, 14,5mm now green // v1.1.0 Fixes //v 1.0.10 Some fixes //v1.0.9 The glow of tracers has been slightly reduced, now it's not Star Wars. Testing a new tracer rebound system, it's a little unfinished, but it looks cool, i need feedback in discord in "Particles" channel //1.0.8 Soviets now have green tracers //1.0.7 Fixed hit effect, now there is the effect of hitting the material and the effect of burning out the tracer at the same time //1.0.6 Now we have different effects of tracer burnout for large and small calibers //1.0.5 Test build, now we have a tracer hit effect and now tracers ricochet more //1.0.4 Now it affects all tracer bullets including heavy machine guns //1.0.1 Some fixes, still may be some baggy, but looks pretty //1.0.0 Release, may be some baggy</li>
+                                                 <li><strong>Dependencies:</strong> None</li>
+                        <li><strong>Tags:</strong> <span class="tags">better, blastcore, effects, tracer, weapons</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/59674C21AA886D57" target="_blank">BetterMuzzleFlashes 2.0</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Enhance your experience with BetterMuzzleFlashes, offering heightened realism and enhanced visibility for muzzle flashes, accompanied by lifelike smoke effects.</li>
+                        <li><strong>Description:</strong> Enhance your experience with BetterMuzzleFlashes, offering heightened realism and enhanced visibility for muzzle flashes, accompanied by lifelike smoke effects. If you want to support my work - boosty.to/suvwar //v2.0.8 AK-74 more realistic smoke and flash, m16 smoke improvments, tweaks //v2.0.7 Tweaks //v2.0.6 Hotfix //v2.0.5 Hotfix //v2.0.4 Hotfix //v2.0.3 Hotfix //v2.0.2 Hotfix //v2.0.1 Hotfix //v2.0.0 Re-made from scratch, better now //v1.5.0 Experimental > Stable //v1.4.3 Improvments //v1.4.3 New ground smoke (and now side smoke, if you shoot close to wall, small hill etc) system, some improvments //v1.4.1 Horfix //v1.4.0 Optimization, improvments //v1.3.9 Description update //v 1.3.8 Tweaks //v 1.3.7 Quick update for Arma Reforger 1.0, slightly optimized muzzle smoke for some  weapons. Will be continue to improving //v 1.3.6 Improvments //v 1.3.5 Improvments //v 1.3.4 Improvments //v 1.3.3 New system for muzzle flashes //v 1.3.2 Optimization, tweaks //v 1.3.1 Fixes //v 1.3.0 Optimization, improvments //v 1.2.9 Зашибись //v 1.2.8 Minor changes //v 1.2.7 Optimization, reduced ammount of smoke //v 1.2.6 Some changes //v 1.2.5 Some changes //v 1.2.2 Minor changes //v 1.2.1 Minor changes //v 1.2.1 Some impr //v 1.2.0 Big update! Now smoke is longer lifetime and other improvments! //v 1.1.3 Some fixes //v 1.1.2 Vz58 effects added //v 1.1.1 Improvments of ground smoke and others //v 1.1.0 Some improvments //v 1.0.9 Merge version from experimental branch //v 1.0.8 AK-74 Ground smoke fix //v 1.0.7 Some fixes //v 1.0.6 Added ground smoke effect, like in arma 3 (will be better) //v 1.0.5 New smoke effects for all weapons and new flashes for heavy mg //v 1.0.4 Fixed muzzle flash from MGs //v 1.0.3 Glows more, so its more noticeable from a distance //v 1.0.2 Less sparks and some fixes //v 1.0.1 First version, may be baggy</li>
+                                                 <li><strong>Dependencies:</strong> None</li>
+                        <li><strong>Tags:</strong> <span class="tags">blastcore, effect, effects, fire, flash, muzzle, weapons</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/5B3ED33ADA805340" target="_blank">Task Force Mattock Weapons</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Custom Weapon Pack created for the 3RD Ranger Battalion M4A1 Block II FSP variants - Block II/Block II M203 MK18 variant M110K1 variant Mk48 Mod 1 M4 SBR MK17 H&K416D</li>
+                        <li><strong>Description:</strong> Custom Weapon Pack created for the 3RD Ranger Battalion Currently has: M4A1 Block II FSP in 2 variants - Block II and Block II M203 MK18 in unpainted variant M110K1 DMR MK48 Mod 1 M4 SBR MK17 HK416 Glock 17 Gen 5 Attachments: Eotech XPS3 Elcan SpecterDR 1/4x Trijicon MRO Reflex Trijicon TA31 ACOG 4x + RMR Schmidt & Bender PMII 5-15x (custom reticle recreated from Schmidt & Bender website) AN/PEQ-15 (working green laser) Surefire Scout M300C (working flashlight) Surefire SOCOM556RC Suppressor (working, sound WIP) AAC SDN-6 Suppressor (working, custom sound) XLR1 Tactical Pistol Light Burris Fastfire RMR Pistol Optic Working suppressor and laser/flashlight via dependency using custom models. Custom paint jobs fully created by me on Substance Painter (may be some weirdness, not fully discovered all issues). All components animated fully by me. WIP as always.</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/5AB301290317994A-Suppressors" target="_blank">Suppressors</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/5ABD0CB57F7E9EB1-RISLaserAttachments" target="_blank">RIS Laser Attachments</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">3rbn, 3rw, blockii, m110, m4a1, rangers, weapon, weapons</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/6056DBEFCB4DE935" target="_blank">MAKO MK17 SC</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> SCAR MK17 SC RIS SUP support animated custom sound</li>
+                        <li><strong>Description:</strong> SCAR MK17 SC RIS SUP support animated custom sound</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/5AB301290317994A-Suppressors" target="_blank">Suppressors</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/5ABD0CB57F7E9EB1-RISLaserAttachments" target="_blank">RIS Laser Attachments</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">weapons</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/614CFCA9B113944E" target="_blank">ANZAC Arma RHS Retexture</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> RHS Retexture</li>
+                        <li><strong>Description:</strong> All credits to RHS for the models. Includes -AMCU Crye top and bottom -New Zealand Patch</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/595F2BF2F44836FB-RHS-StatusQuo" target="_blank">RHS - Status Quo</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">characters</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/615F7A92CCEDD8E3" target="_blank">AT4 - M136</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> - M136 AT4 - Double damage of the m72</li>
+                        <li><strong>Description:</strong> Still WIP: - need to fix the animation of the firing - need to fix the palcement in the back of the character - try to make a version with the sight closed and when extend it it open the sight - french texture of the launcher feel free to dm me for any upgrade --- Ah, dear Tiger! The sources are in the mod. If you want to have fun decompiling them, while you yourself are fighting against it, why not simply send me a message? Instead of ruining the Arma community and tarnishing the image of French players, let’s talk directly. Let’s ensure that the community remains a place of camaraderie and mutual support, not suspicion and discord. Take care! --- Thanks to the overlord team, Sen, and Kyle for helping me If you have any questions or bug reports or even if you'd like to join  us, here's our Discord : https://discord.gg/wgswfCnMuE</li>
+                                                 <li><strong>Dependencies:</strong> None</li>
+                        <li><strong>Tags:</strong> <span class="tags">french, frm, launcher, weapons</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/5D61500CC41C394B" target="_blank">M4 - 4 Versions RHS compatible</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> 4 M4 variants Working Suppressor Hydra Rail Works with RHS sights and lasers M4 carry handle (stock) M4 carry handle with UBGL M4 Hydra Rail M4 Hydra Rail with UBGL</li>
+                        <li><strong>Description:</strong> The M4 is the carbine version of the M16A2, which is the NATO-caliber variant of the M16. The M4 has a shorter barrel and an adjustable length stock. The M4 retains the direct impingement gas system of the M16. The action cycles due to gas siphoned from the barrel impinging via a small tube onto a piston which is part of the bolt. The M4 is a select-fire rifle. Most variants allow for full automatic fire, with some having a similar three round burst mechanism as the M16A2. Some M4 variants are fitted with an integrated carry handle that houses the rear sights. The vast majority of M4 models are of the flattop variant. These feature a Picatinny accessory rail on top of the receiver for mounting optical or mechanical sights.</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/595F2BF2F44836FB-RHS-StatusQuo" target="_blank">RHS - Status Quo</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/5AB301290317994A-Suppressors" target="_blank">Suppressors</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">m4, rhs, ubgl, weapons</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/5D715869CDED62D7" target="_blank">M4A1 with M320 and M203</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> M4A1 with M302 UBGL and rail for sight/flash/laser M4A1 with rail for sight/flash/laser M4A1 with M203 UBGL and rail for sight/flash/laser lLOADOUTS WORKS now with working suppressors</li>
+                        <li><strong>Description:</strong> The M4A1 carbine is a fully automatic variant of the basic M4 carbine intended for special operations use.[60] The M4A1 was introduced in May 1991 and was in service in 1994. The M4A1 was the first M4 model with the removable carry handle. M320 Grenade Launcher Module (GLM) is the U.S. military's designation for a new single-shot 40 mm grenade launcher system to replace the M203[2][3] for the U.S. Army, while other services initially kept using the older M203. The M320 uses the same High-Low Propulsion System as the M203.</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/5AB301290317994A-Suppressors" target="_blank">Suppressors</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/5ABD0CB57F7E9EB1-RISLaserAttachments" target="_blank">RIS Laser Attachments</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">weapons</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/5AD299F4421F1D6A" target="_blank">Desert Eagle</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Desert Eagle with scope/attachment support and broken animations in the US arsenal</li>
+                        <li><strong>Description:</strong> * warning: overpowered and inaccurate * animations are not final and probably will never be Just trying to figure out how handguns work in this game Model: Desert Eagle by Minte Elseviers is licensed under Creative Commons Attribution 1.0.8: Compatibility update 1.0.7: Sound tweaks, ironsights excluded from optics switching 1.0.6: Moving attachment points to prepare for big alignment changes 1.0.5: Updated to remove Optics Pack mod dependency 1.0.4: Fix ugly attach/detach strings 1.0.2-1.0.3: - extreme damage - bigger muzzle effect</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/5ABD0CB57F7E9EB1-RISLaserAttachments" target="_blank">RIS Laser Attachments</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">deagle, desert, eagle, weapons</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/6273146ADFE8241D" target="_blank">AH6M</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> AH6M Littlebird</li>
+                        <li><strong>Description:</strong> WIP updates will still go ahead 9 variants included MH6M can carry up to 8 passengers AH6M Standard 2x M134               (Pilot Controled) 2x LAU86 Pods     (Pilot Controled) AH6M M134 2x M134              (Pilot Controled) AH6M RKT 2x LAU86 Pods    (Pilot Controled) AH6M ATGMX1 2x M134               (Pilot Controled) 1x LAU86 Pod      (Pilot Controled) 1x AGM114x2      (CoPilot Controled) AH6M ATGMX2 2x M134              (Pilot Controled) 2x AGM114x2     (CoPilot Controled) AH6M AIM92X1 2x M134              (Pilot Controled) 1x AIM92x2         (CoPilot Controled) 1x LAU86 Pod     (Pilot Controled) AH6M AIM92X2 2x M134              (Pilot Controled) 2x AIM92x2         (CoPilot Controled) AH6M GAU19 2x M134             (Pilot Controled) 1x GAU19           (Pilot Controled) 1x LAU86 Pod    (Pilot Controled) A flight suit and helmet is included in the US box All Weapons are reloadable via Helipad just look at the pods and rearm them Every variant has a Gunner Camera for scouting If you have AH6M upgrade those camera will also have Thermals Link below https://reforger.armaplatform.com/workshop/62AE96D92179F7A0-AH6MUpgrade Thankyou to these amazing people for helping me get this bird up in the air 0zzie                 Main Textures of the Heli Ayiirogon         Decals Textures Naito                Cleaning up Models Oxide Three     Bones/Animation Tonimontana   Massive Enfusion help Cyborgmatt      Massive Enfusion Help and WCS armament mod for the weapons Agent Zero       MFD Scripts AussieMercs    Weapon ammo count MFD scripts without them this bird wouldnt be operational Any bugs pls contact me in the thread on both official arma discord and the Arma modding lounge</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/629B2BA37EFFD577-WCS_Armament" target="_blank">WCS_Armament</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">ah6, helicopter, littlebird, md500, mh6, vehicles</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/61AEB4EBB4831C34" target="_blank">Minimi Mk3 & Para</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> British Minimi Mk3 & Minimi Para</li>
+                        <li><strong>Description:</strong> .</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/5AB301290317994A-Suppressors" target="_blank">Suppressors</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/5ABD0CB57F7E9EB1-RISLaserAttachments" target="_blank">RIS Laser Attachments</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/5AF6E0F075D79473-M249ScopeRails" target="_blank">M249 Scope Rails</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">weapons</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/5AB890B71D748750" target="_blank">M4 Block II and URG-I</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> "Best M4 Mod for Reforger" - Some Guy on Discord Customize in the loadout editor :)</li>
+                        <li><strong>Description:</strong> Adds M4 in 4 variants with about 150 customizable parts in the Bacon Loadout Editor.</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/5AB301290317994A-Suppressors" target="_blank">Suppressors</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/5ABD0CB57F7E9EB1-RISLaserAttachments" target="_blank">RIS Laser Attachments</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">bacon, block, m4, urgi, weapons</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/5DF14A2FD0C42CC0" target="_blank">MAKO AK 105 Zentico</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> own sound Comes with suppressor RHS compatible 60 rounder pic by myvapeblewup</li>
+                        <li><strong>Description:</strong> The AK-105 is a shortened carbine version of the AK-74M rifle, which in turn was derived from the original AK-47 design and its successor, the AK-74. It is chambered to fire 5.45×39mm ammunition.[1]</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/5AB301290317994A-Suppressors" target="_blank">Suppressors</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/5ABD0CB57F7E9EB1-RISLaserAttachments" target="_blank">RIS Laser Attachments</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">weapons</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/5D7531C2D05BC700" target="_blank">MCR-Pack 5.56x45</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> MCR PACK: 4 variantions WORKS WITH ANY RIS ATTACHMENT/OPTIC NOW ALSO CAN USE SUPPRESSORS MCR DMR MCR SAW MCR CQC MCR CARBINE</li>
+                        <li><strong>Description:</strong> MCR PACK: 4 variantions WORKS WITH BACONS SCOPES DMR - BLACK , WOODLAND , UCP , TAN , DIGITAN, TWO TONE SCOPED, RANGEFINDER, 20 ROUND SEMI SAW -BLLACK ,WOODLAND , UCP , TAN , DIGITAN, TWO TONE 100 ROUND, SPECTER , LASER , FULL AUTO (1000 RPM) CARBNE - BLACBK , WOODLAND , UCP , TAN , DIGITAN, TWO TONE M320 ,SPECTER, LASER, 30 ROUND SEMI/FULL (650 RPM) CQC - BLACK , WOODLAND , UCP , TAN , DIGITAN, TWO TONE HOLO , LASER , FLASHLIGHT, 60 ROUND  SEMI/FULL (850 RPM)</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/5AB301290317994A-Suppressors" target="_blank">Suppressors</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/5ABD0CB57F7E9EB1-RISLaserAttachments" target="_blank">RIS Laser Attachments</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">weapons</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/5F253314CCC13FD4" target="_blank">Ghost 9</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Ghost 9 with suppressor and sight support</li>
+                        <li><strong>Description:</strong> Ghost 9 with suppressor and sight support added 9 S/A</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/5AB301290317994A-Suppressors" target="_blank">Suppressors</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/5ABD0CB57F7E9EB1-RISLaserAttachments" target="_blank">RIS Laser Attachments</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">weapons</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/616478A18DC7DCB6" target="_blank">FN SCAR -HEAVY and LIGHT-</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> FN SCAR-H 7.62mm NATO and FN SCAR-L 5.56x45mm in 2 variants (FDE/BLACK) with suppressors and foregrips.</li>
+                        <li><strong>Description:</strong> All picatinny rails work with any RIS attachments from other mods (i.e Optics/Lights/Lasers) Flippable iron sights Custom weapon animations Custom player animations Custom AAC SDN-6 and SRD762 Supressors Custom 556 suppressors (USING SEPERATE RIFLE PREFABS FOR SUPP AND UNSUPP UNTIL BOHEMIA ADD SUPPRESSORS) 6 custom foregrips Custom SCAR-H magazines 2k textures Special thanks to Cyborgmatt and Jamsheed for all the help</li>
+                                                 <li><strong>Dependencies:</strong> None</li>
+                        <li><strong>Tags:</strong> <span class="tags">fn, fnscar, modern, scar, scarh, scarl, weapon, weapons</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/61F0B1422F398807" target="_blank">SVD Spectre Edit</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> SVD Spectre edit</li>
+                        <li><strong>Description:</strong> Added two variants of Spectre SVD - No attachments - No suprresor Also changed the handguard and stock materials to be less reflective (more resemble to plastic than painted wood) Main addon done by SRGshadows</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/5E39644AB07EA789-SPECTRESVD" target="_blank">SPECTRE SVD</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">weapons</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/60D23A92813D0C8E" target="_blank">Country Flag Patches</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Just a pack of patches for a number of countries and other roles.</li>
+                        <li><strong>Description:</strong> A very basic flag and roles patches pack based on RHS. Currently contains flag patches for: - Poland - Czech Rep. - Slovakia - Hungary - Romania - Ukraine - Lithuania - Latvia - Estonia - Finland - Sweden - Norway - Denmark - Germany - Netherlands - Austria - France - Italy - Spain - Portugal - Turkey - Great Britain - Ireland - Canada - Australia - Pogon - Greek - Serbian - Slovenian - American - Russian - Belorussian - Croat - Bulgaria - Switzerland - Belgium - Macedonia - Bosnia and Herzegovina - Moldova - Albania - Montenegro - Brazil - Lebanon - Mexico - Scotland - Wales - South Africa - China - Dominican Republic - Kazakhstan - Iraq - Syria - Egypt - Iran - India - Pakistan - Venezuela - Colombia - New Zeland - Japan - North Korea - South Korea - Vietnam - Indonesia - Singapore - Malaysia - Philippines - Thailand - Taiwan - Puerto Rico - Cyprus - Greek Cyprus - Bolivia - Cuba Other: - EU - NATO - NATO (RG) - UN - Tactical Sassy - StDavids - Everon Defence Force - Everon FIA - Altis FIA - Chernorus Roles: - Medic (Red +) - Medic (Red) - Medic (Black) - Medic * - Military Police (Green) - Alpha (From 1-1 to 1-9) - Bravo (From 1-1 to 1-9) - Charlie (From 1-1 to 1-9) - Delta (From 1-1 to 1-9) Planned: - Multicam (MC) variants for the rest of the countries patches - More roles patches (EOD, Blood types etc) Known Issues: - Contrast may be a bit off on some of the textures Contact: Discord = iamspookd (Feel free to contact me via dms or preferably dedicated Arma Refogrer Discord mod thread if you'd like me to include a specific country or other cool ideas or in case there are any issues that I might've missed) Special Thanks to: BlackRivoR - Helping out with the textures for the squad patches The rest of the bois from the "GetSpookd's Co-Op Server" for motivating me to work further on this And to the dependency assets makers: Red Hammer Studios - RHS Status Quo https://docs.rhsmods.org/rhs-status-quo-user-documentation/arma-reforger/rhs-status-quo/eula</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/595F2BF2F44836FB-RHS-StatusQuo" target="_blank">RHS - Status Quo</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">characters, flag, patch</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/59A30ACC02650E71" target="_blank">Night Vision System</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Full Night Vision System. Can be found in any "Equipement Crate". Please read the description.</li>
+                        <li><strong>Description:</strong> Full Night Vision System. All NVG can be found in an "Arsenal" in the GameMaster mode . All faction are available. In "settings/Controls/Night Vision System" you can set 3 keys. - "Toggle - Night Vision" by default it's "N". (Xbox : Double Pad RIGHT) by default. - "Increase luminosity - Night Vision" by default it's "SHIFT + =" (Xbox : RB + Pad UP) by default. - "Decrease luminosity - Night Vision" by default it's "SHIFT + )" (Xbox : RB+ Pad Down) by default. Night vision is also available in : GameMaster/Editor, Armavision, Adminmode. The GPNVG model have been made by Iulian_Dobrogeanu. You can find them here : https://skfb.ly/orJHu</li>
+                                                 <li><strong>Dependencies:</strong> None</li>
+                        <li><strong>Tags:</strong> <span class="tags">effects, weapons</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/5F2176F0C7ED7486" target="_blank">p320</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> P320 with animation</li>
+                        <li><strong>Description:</strong> The SIG Sauer P320 is a modular semi-automatic pistol made by SIG Sauer, Inc., SIG Sauer's American branch.[4] It is a further development of the SIG Sauer P250, utilizing a striker-fired mechanism in lieu of a double action only hammer system. The P320 can be chambered in 9×19mm Parabellum, .357 SIG, .40 S&W, .45 ACP, and 10mm Auto and can be easily converted from one caliber to another; a change from .357 SIG to .40 S&W requires only a barrel change; a change from 9mm to .357 SIG or .40 S&W (or vice versa) is accomplished using a caliber exchange kit.</li>
+                                                 <li><strong>Dependencies:</strong> None</li>
+                        <li><strong>Tags:</strong> <span class="tags">weapons</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/5D915A9DC6EB0856" target="_blank">Benelli M4</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Big thanks to Zelik 2 Benelli M4 with 4 types of ammo 12ga Slug 12ga Rubber slug 12ga Buckshot 12ga Birdshot RIS compatible, Animated , Custom sound US arsenal</li>
+                        <li><strong>Description:</strong> Big thanks to Zelik helping me getting the animation to work <3 Benelli M4 with 4 types of ammo 12ga Slug 12ga Rubber slug 12ga Buckshot 12ga Birdshot RIS compatible, Animated , Custom sound US arsenal</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/5AB301290317994A-Suppressors" target="_blank">Suppressors</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/5ABD0CB57F7E9EB1-RISLaserAttachments" target="_blank">RIS Laser Attachments</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">shell, shotgun, weapon, weapons</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/5AB301290317994A" target="_blank">Suppressors</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Suppressors reupload. Requires compatible gun.</li>
+                        <li><strong>Description:</strong> Suppressors reupload. Requires compatible gun.</li>
+                                                 <li><strong>Dependencies:</strong> None</li>
+                        <li><strong>Tags:</strong> <span class="tags">bacon, misc, silencer, suppressor, weapons</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/5CF0C3158AB2337E" target="_blank">Task Force Mattock Uniforms</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Complete rework from the ground up. Models from CGTrader - full licenses are available with receipts if required. Updated for 0.9.9 medical features</li>
+                        <li><strong>Description:</strong> This will take too long, needless to say, a lot of US forces equipment and gear. No vehicles or weapons on this pack. Zelik's Extra Attachments Mod needed due to the accessories etc.</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/59A30ACC02650E71-NightVisionSystem" target="_blank">Night Vision System</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/5D0551624969C92E-ZeliksCharacter" target="_blank">Zeliks Character</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">3rbn, army, cag, characters, mattock, misc, rangers, soldier, systems, tf, us</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/5F1EE615E7AE3106" target="_blank">BGONE</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> [BFL]-Guided Ordnance Navigation Engine (BGONE) Components for launchers/projectiles that enable guidance. Default Weapon Lock button is left control or RB while ADS. Heavy WIP, expect bugs.</li>
+                        <li><strong>Description:</strong> For Feedback, Request and Suggestions I can be reached in the ArmA Discord server. An attempt to adapt the ACE3 missileguidance framework from arma 3 into reforger. Current Locktypes: PLOS (Predicted Line of Sight): Aim at target, hold LOCK button while tracking the target for 4-8 seconds. While still holding the LOCK button, fire the missile. The missile will follow the predicted path of the target. SACLOS (Semi Automatic Command Line of Sight): Aim at target and fire, missile will follow where you are aiming, if you try and manouver too much, the missile wil llose track. VIS (Visual lock): Aim at target, hold LOCK button. A taret indicator should appear on the target when the seeker can see it, a locking on sound is also played. Keep aiming at the target, if line of sight is broken, the lock is lost and will have to be restarted. Once locked on, indicated by a change in the reticle as well as the sound, fire the missile. The missile will fly towards the target by itself. PLOS supports both direct and flyover attack modes, you can swap in between attack modes and proximity arming distances with the inspect weapon actions. VIS supports direct and top down attack and you can choose what unit types can be locked onto, for example only aircraft. WIP howto: BGONE_GuidedMissileLauncherComponent is added to launcher. LockType is selected. BGONE_GuidedMissileComponent is added to projectile. Seeker, AttackProfiles and engine is selected. Initial velocity and time to live must be set for projectile in both the MissileMoveComponent as well as the BGONE_MissileEngine within the BGONE_GuidedMissileComponent. Actions can be added to the launcher using the BGONE_ArmingDistanceSwitchUserAction and BGONE_AttackProfileSwitchUserAction for selecting attack mode and armingdistances. Example implementations for all lock- seeker- and attackprofile types are provided as prefabs that get added to the US arsenal with a cost of 0. Known bugs: Picking up a launcher dropped by another player will not work properly if the launcher was "pulled out / equipped" by the first player. Keybindings for the "Weapon Lock" action is not tested and most likely wont work.</li>
+                                                 <li><strong>Dependencies:</strong> None</li>
+                        <li><strong>Tags:</strong> <span class="tags">bgone, guided, missile, systems</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/5AC2954C784671B3" target="_blank">Barrett M82</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Barrett M82 with cool APIT rounds and jank animations, scope is not zeroed properly yet, will update soon.</li>
+                        <li><strong>Description:</strong> Kinda wanted to try sniper rifles. US arsenal. Weapon, scope and magazine model by Maksim Nazarov - artstation.com/alexfinsher 1.0.13: compatibility update 1.0.12: compatibility update 1.0.11: "ironsights" removed from sights switching, sound tweaks to reduce some mid-high tones 1.0.10: sound tweaks, attachment point moved a little forward 1.0.9: optic moved away to ris laser attachment pack, attachment slots moved in prep for attachment changes 1.0.8: optic now separately in arsenal, recoil and swap cut in half until I figure out how to fix bipods 1.0.7: update to remove Optics Pack dependency 1.0.6: nerfing penetration again 1.0.5: decreased penetration depth, bullets should still pierce BTR armor but not multiple BTRs, changed bullet flyby sounds 1.0.4: added scope zero up to 1800m, tweaked roughness values on materials, changed silver color to dark gun metal 1.0.3: sound and particles tweaks 1.0.2: scope near plane moved a little back to not clip attachments 1.0.1: disable mip generation for reticles</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/5ABD0CB57F7E9EB1-RISLaserAttachments" target="_blank">RIS Laser Attachments</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">apit, barrett, big, gun, m82, sniper, weapons</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/595F2BF2F44836FB" target="_blank">RHS - Status Quo</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> RHS on Arma Reforger See https://forums.bohemia.net/forums/topic/239698-rhs-status-quo/ for more details</li>
+                        <li><strong>Description:</strong> RHS: Status Quo remains true to its roots in the contemporary sphere of things: 2000 - present with the main core around 2017 with US and RF taking center stage. We do intend to put some focus on a story this time around. Also stay tuned for information on a brand new terrain in development! As of now we have developed a small priority list for what we call Phase 1 which should bring the mod to 1.0 status hopefully sometime. —————————————————————————————— WE NEED YOUR HELP! Now the recruitment bit To make this happen we certainly need more new talent! Please consider dropping us a line if you would like to try out for the team in the following capacities if your profile matches: · Asset creators: you are detail driven, accuracy matters to you, you are strong in HP/LP baking workflows for current generation PBR engines, you are familiar with Substance Painter. -> Hard surface: Weapons, objects, architecture, attachments etc. -> Uniforms, gear -> Marvelous Designer knowledge is a big plus. · Texture artists: you are detail driven, accuracy matters to you, perhaps you do not model yourself but are able to turn HP/LP models of others into stunning artwork in Substance Painter. · Animators : you are familiar with skinning and animations in any tool that is able to export to Enfusion (max, blender, maya etc.). This involves both hardsurface (weapons/vehicles) animation as well as characters. · Producers: help our team inject the assets into the game, configure the models, produce copy, zero the sights etc. This helps us enourmosly! Especially if you are a bit familiar already with Enfusion Workbench. If you feel up to the job please contact @Soul_Assassin or @PuFu, but please only serious applicant need apply.</li>
+                                                 <li><strong>Dependencies:</strong> None</li>
+                        <li><strong>Tags:</strong> <span class="tags">characters, effects, misc, props, rhs, scenarios_mp, scenarios_sp, systems, terrains, vehicles, weapons</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/616AFB4E94708348" target="_blank">Glock 41</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Glock 41</li>
+                        <li><strong>Description:</strong> .</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/5ABD0CB57F7E9EB1-RISLaserAttachments" target="_blank">RIS Laser Attachments</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">weapons</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/5D596455C6A5DA94" target="_blank">G3A3 DMR</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> This G3A3 has been changed to a semi auto only to be better at its role as a marksman rifle as well as beeing capable to use multiple diffrent scopes and sights for every combat senario</li>
+                        <li><strong>Description:</strong> The G3A3 is a roller-delayed blowback battle rifle designed in West Germany in the late 1950s that served as the main service rifle for West Germany well into the 1990s. The rifle has seen significant export overseas and is produced under license in a number of countries. It fires the full-sized 7.62x51mm NATO cartridge, which packs a significant punch and still retains much of its power out to further ranges. Automatic fire is not recommended due to the significant recoil produced by the cartridge. This G3A3 has been changed to a semi auto only to be better at its role as a marksman rifle as well as beeing capable to use multiple diffrent scopes and sights for every combat senario</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/5ABD0CB57F7E9EB1-RISLaserAttachments" target="_blank">RIS Laser Attachments</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">weapons</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/5AD6FDAC65418DEA" target="_blank">CZ Scorpion EVO3 SMG</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> CZ Scorpion EVO3 with bad animations available in all arsenals</li>
+                        <li><strong>Description:</strong> Trying out a SMG Model: Maksim Nazarov artstation.com/alexfinsher Drum mag model: Helion#0849 1.0.16: Reduced bullet spread and tweaked the deployment hand position a little 1.0.15: Optics slot changed to 1913 short 1.0.14: Compatibility update 1.0.13: ironsights removed from sights switching 1.0.12: sound tweaks 1.0.11: reload animation no longer makes the character slap the muzzle 1.0.10: suppressor mounting location changes 1.0.9: xps3 available again now that optics are in separate pack, moved attachment alignment points in preparation of the new attachment changes 1.0.8: weapon now has slots in new inspect mode, changed suppressed sounds 1.0.7: added drum mag, inside of weapon now no longer see-through 1.0.6: Scope offset point fixed, added support for 9mm suppressor 1.0.5: Same thing but for real now 1.0.4: Update to remove Optics Pack dependency 1.0.3: Speed up reload animation, reduce bullet velocity (minimal damage reduction), try to get rid of ugly strings on magazine detach and attach 1.0.2: Dispersion range 42 -> 55</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/5AB301290317994A-Suppressors" target="_blank">Suppressors</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/5ABD0CB57F7E9EB1-RISLaserAttachments" target="_blank">RIS Laser Attachments</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">evo3, scorpion, smg, weapon, weapons</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/5DC89330D9F0942E" target="_blank">SA 58</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> RHS compatible uses m14 mags added sup</li>
+                        <li><strong>Description:</strong> The FN FAL (French: Fusil Automatique Léger, English: Light Automatic Rifle) is a battle rifle designed in Belgium in 1953 by Dieudonné Saive and manufactured by FN Herstal. During the Cold War the FAL was adopted by many countries of the North Atlantic Treaty Organization (NATO), with the notable exception of the United States. It is one of the most widely used rifles in history, having been used by more than 90 countries, many of which were engaged in anti-communist proxy conflicts, leading to the rifle becoming popularly known as "the Right Arm of the Free World”.[4][page needed] It is chambered in 7.62×51mm NATO, although originally designed for the intermediate .280 British. The British Commonwealth variant of the FAL was redesigned from FN's metrical FAL into British imperial units and was produced under license as the L1A1 Self-Loading Rifle.</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/5ABD0CB57F7E9EB1-RISLaserAttachments" target="_blank">RIS Laser Attachments</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">weapons</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/5CA6BA2F63DE1174" target="_blank">M17 Pistol</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> M17 in two colors, with 21 round mags, a suppressor, sight and tac light</li>
+                        <li><strong>Description:</strong> Available in US Arsenals. 1.0.7: Muzzle slot changed for suppressor compatibility 1.0.6: Compatibility update 1.0.4-1.0.5: Fixing actions 1.0.3: Updated reflex sight to have illumination toggle 1.0.2: Ironsights excluded from scope switching 1.0.1: Reticle changes</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/5AB301290317994A-Suppressors" target="_blank">Suppressors</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/5ABD0CB57F7E9EB1-RISLaserAttachments" target="_blank">RIS Laser Attachments</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">bacon, m17, p320, pistol, sauer, sig, weapons</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/5E04C10D824A8990" target="_blank">M60E4</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Modernized M60 with Rails for optics and attachments. Thanks to Bacon#8008 for the inspiration and Rail system</li>
+                        <li><strong>Description:</strong> Modernized M60 with Rails for optics and attachments. Thanks to Bacon#8008 for the inspiration and Rail system</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/5AF6E0F075D79473-M249ScopeRails" target="_blank">M249 Scope Rails</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">weapons</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/616AC02E92272ECE" target="_blank">P226</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Sig Sauer P226 Ryder9ti2 Suppressor Custom Shot and Handling sounds</li>
+                        <li><strong>Description:</strong> Although under an APL-ND license, I will allow the use of this addon to be used as a dependency to modify the neccessery files to allow for use in; modded faction/arsenal boxes,custom server configs and improvement mods such as sounds, animations, realism.</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/5AB301290317994A-Suppressors" target="_blank">Suppressors</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/5ABD0CB57F7E9EB1-RISLaserAttachments" target="_blank">RIS Laser Attachments</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">weapons</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/62021EB6163A2698" target="_blank">NGSW</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Next Generation Squad Weapon - SIG Sauer</li>
+                        <li><strong>Description:</strong> Complete package of options for the NGSW weapons. Includes: XM7 - In Tan and Black XM7SBR - Tan & Black XM250 - In Tan and Black RM338 - Tan & Black XM157 Optic - Auto-Illumination Reticle Setting, Laser Rangefinder SLX Suppressor for 6.8x51mm - Tan and Black Hybrid 6.8x51mm Ammunition - Tan and Black Rifle Mags, 20rnd, 25rnd .338 Norma - 100rnd Box, Normal & Tracer CZ40 UGL, M320, Rampart UGL</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/5AB301290317994A-Suppressors" target="_blank">Suppressors</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/620E426C34BE0D17-LaserRangefinder" target="_blank">Laser Rangefinder</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">weapon, weapons, xm157, xm250, xm7</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/61DF0203C5B8E136" target="_blank">P220 - Variants</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Sig Sauer P220</li>
+                        <li><strong>Description:</strong> 5 Variants: P220, P220 Elite Minebea P9 Minebea P9.v2 Swiss P75</li>
+                                                 <li><strong>Dependencies:</strong> None</li>
+                        <li><strong>Tags:</strong> <span class="tags">weapons</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/6212F19877B87B8C" target="_blank">Modern Gear Helmets</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Compatible with RHS NVGs and Patches</li>
+                        <li><strong>Description:</strong> Adds 16 new Helmet Variants. 5x New Pilot Helmets Thx to Bogdan Zhukov for the Models. Preview Pic made by him. Please contact me if anything is wrong. Im a member of the Tactical Barbies community, come check us out!</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/595F2BF2F44836FB-RHS-StatusQuo" target="_blank">RHS - Status Quo</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">characters, helmet</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/5F093013D3B3B20B" target="_blank">ModernArmy</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> A faction replacement mod to make the US Army faction more modern. This includes arsenal data and loadouts for every US character.</li>
+                        <li><strong>Description:</strong> This is a faction replacement mod which is intended to make the US Army faction more modern. It replaces every faction prefab with modern equipment including the default player. The loadouts have been slightly modified to be more modern, but left intact enough to keep their original intent. Credits to the following mod makers as I included their assets: TheAussieMerc (3RD RANGER BATTALION MODPACK) Bacon8008 (M4A1 BLOCK II AND URG-I, RIS LASER ATTACHMENTS, M110 DMR,M17Pistol) Greg3d_fr (Night Vision System) zelik (ZEL_Character) TraceSnowOwl (M60E4) This is my first mod so please go easy on me! Known Issues/Bugs: *When switching from secondary weapon to primary weapon the secondary weapon does not get put in the drop leg holster as it should.</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/595F2BF2F44836FB-RHS-StatusQuo" target="_blank">RHS - Status Quo</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/59A30ACC02650E71-NightVisionSystem" target="_blank">Night Vision System</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/5AB890B71D748750-M4BlockIIandURG-I" target="_blank">M4 Block II and URG-I</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/5ABD0CB57F7E9EB1-RISLaserAttachments" target="_blank">RIS Laser Attachments</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/5AF6E0F075D79473-M249ScopeRails" target="_blank">M249 Scope Rails</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/5CA125536EE7430A-M110DMR" target="_blank">M110 DMR</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/5CA6BA2F63DE1174-M17Pistol" target="_blank">M17 Pistol</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/5CF0C3158AB2337E-TaskForceMattockUniforms" target="_blank">Task Force Mattock Uniforms</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/5E04C10D824A8990-M60E4" target="_blank">M60E4</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">characters, equipment, faction, modern</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/5F1911B5C78C249B" target="_blank">HK416 - 24 variants</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> HK416 with 6 variants and 4 styles each animated bolt and trigger (thanks to zelik and gators help teaching me)4 attachments slots on the front rail DMR has 2 variants w/wo netting sup support</li>
+                        <li><strong>Description:</strong> The Heckler & Koch HK416 is an assault rifle chambered for the 5.56×45mm NATO cartridge. It is designed and manufactured by the German company Heckler & Koch. Although the design is based on the AR-15 class of firearm (specifically the Colt M4 carbine family issued to the U.S. military), it uses a proprietary short-stroke gas piston system from Heckler & Koch's earlier G36 family of rifles.</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/5AB301290317994A-Suppressors" target="_blank">Suppressors</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/5ABD0CB57F7E9EB1-RISLaserAttachments" target="_blank">RIS Laser Attachments</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">weapons</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/5AF6E0F075D79473" target="_blank">M249 Scope Rails</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Literally slaps scope RIS rails on the M249. You can use any scope compatible with the Attachments Compatibility mod.</li>
+                        <li><strong>Description:</strong> At least this one doesn't have jank animations. 1.0.5: compatibility update 1.0.4: ironsights removed from optics switch 1.0.3: attachment point moved in preparation for attachment changes soon 1.0.2: update to remove Optics Pack dependency 1.0.1: cleaned up project to make it a little smaller</li>
+                                                 <li><strong>Dependencies:</strong> None</li>
+                        <li><strong>Tags:</strong> <span class="tags">m249, rails, ris, scope, scopes, weapons</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/5E8E86A8CDB8EC59" target="_blank">G28</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> G28 RIS Suppressed custom sound</li>
+                        <li><strong>Description:</strong> The G28 is a military version of the civilian semi automatic competition rifle MR308. Deployed in the established 7.62 x 51 calibre, the “Designated Marksman Rifle” (DMR) ensures accuracy of 1.5 MOA whilst enabling a full night fighting capability. Providing a maximum effective range and a high first round hit probability, the G28 will also allow suppressive fire against man size targets accurately.</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/5AB301290317994A-Suppressors" target="_blank">Suppressors</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/5ABD0CB57F7E9EB1-RISLaserAttachments" target="_blank">RIS Laser Attachments</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">weapons</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/620E426C34BE0D17" target="_blank">Laser Rangefinder</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Adds a laser rangefinger scope component, to be used with other mods, as well as a stand alone rangefinder binocular unit.</li>
+                        <li><strong>Description:</strong> Adds a laser rangefinger scope component, to be used with other mods, as well as a stand alone rangefinder binocular unit.</li>
+                                                 <li><strong>Dependencies:</strong> None</li>
+                        <li><strong>Tags:</strong> <span class="tags">misc</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/5AAF6D5352E5FCAB" target="_blank">Project Redline - Core</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Project Redline: Core Contains shared scripts, weapons, and assets common to many other mods.</li>
+                        <li><strong>Description:</strong> Common assets shared by all Project Redline mods. All mounted weapons, scripts, and other attachments may be used by anyone else; however they may not be derived or reuploaded. Project Redline Team: Ralian, BigBen, SpaceStrider, Ashyl, Adam, Zelik</li>
+                                                 <li><strong>Dependencies:</strong> None</li>
+                        <li><strong>Tags:</strong> <span class="tags">clothing, headgear, r3d, scripts, vehicles</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/5E39644AB07EA789" target="_blank">SPECTRE SVD</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> SVD with Rail canted front mount for attachments suppressor</li>
+                        <li><strong>Description:</strong> SVD with Rail canted front mount for attachments suppressor</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/5AB301290317994A-Suppressors" target="_blank">Suppressors</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/5ABD0CB57F7E9EB1-RISLaserAttachments" target="_blank">RIS Laser Attachments</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">weapons</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/61F6D25070070892" target="_blank">Modern Gear Pack by Ozzie</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> (Updated!) 117x Pieces of Clothing, 2x Custom Radios 30x Vests 28x Backpacks 16x Headgear 12x Pants 17x Jackets 12x Warbelts 4x Gloves (W.I.P)</li>
+                        <li><strong>Description:</strong> Pretty Big project of mine Next Update will include custom Patches. It will stay without Dependecies of any mods. All Gear runs 4k Textures Very clean Mod, Smallest Modsize possible for over 119 Pieces of Gear I own all models in this Mod. Big Thanks to Bogdan Zhukov from CGTrader for making these insanely good models and textures. Preview Pic is made by him. Also Thanks to Zeon for Weightpainting the Jackets to perfection. And of course Pixseli for making textures with me. I'm part of the TacticalBarbies Community, come check us out!</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/5D0551624969C92E-ZeliksCharacter" target="_blank">Zeliks Character</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">backpack, barbie, characters, gear, head, jacket, mask, misc, tactical, vest</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/618F209CAA228998" target="_blank">SWAG Weapons Pack</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Includes -G28 and G28P -Noveske Navy 0.0.34 Test version with Matte Noveske Navy, accessories and matte optics for the G28 mounted on those rifles. Not in box. For feedback</li>
+                        <li><strong>Description:</strong> Initial Public version Adds -G28, g28 Patrol, Noveske Navy in reg and UBR -S and B LPVO and LR scope with custom reticles -Aimpoint H2, Aimpoint T1, Steiner Cqbl, Modlite 18650 -As much of the good stuff that i could add Thanks to RHS and Bacon. This wouldnt be possible without them. Credit to Hailedbot for images Feedback in the Arma Reforger Discord -> Enfusion mods -The full kit version are prebuilts and the g28 full kit version has a custom muzzle effect so dont switch suppressors.</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/595F2BF2F44836FB-RHS-StatusQuo" target="_blank">RHS - Status Quo</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/5AB890B71D748750-M4BlockIIandURG-I" target="_blank">M4 Block II and URG-I</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/5ABD0CB57F7E9EB1-RISLaserAttachments" target="_blank">RIS Laser Attachments</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/5CA125536EE7430A-M110DMR" target="_blank">M110 DMR</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/606B100247F5C709-BaconLoadoutEditor" target="_blank">Bacon Loadout Editor</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">g28, h&k, noveske, swag, weapons</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/61BB004CBA2EC6EC" target="_blank">SWAG Optics Mag Pack</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> SWAG Optics and Mag Pack Includes new optics and mags v0.0.15 fixed LODs on xm157 and add Romeo 8t blk and fde</li>
+                        <li><strong>Description:</strong> There are lasers in the Light show pack (denoted by Hydra mount) for this Currently configured for rifles Feedback via the Arma discord Enfusion showcase Channel - CosmiCs mods</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/595F2BF2F44836FB-RHS-StatusQuo" target="_blank">RHS - Status Quo</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/5ABD0CB57F7E9EB1-RISLaserAttachments" target="_blank">RIS Laser Attachments</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/606B100247F5C709-BaconLoadoutEditor" target="_blank">Bacon Loadout Editor</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">optics, reddot, swag, weapons</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/5D67120B887153FC" target="_blank">L96A1 .338 with Gun Wrap</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> L96A1 / camo wrap</li>
+                        <li><strong>Description:</strong> L96A1 .338 Lapua Magnum /// Scope x3-x15 /// 50 r/pm /// gun comes with a custom gun wrap /// attach and detachable /// everything is spawnable in GM /// mod is WIP /// feel free to contact me via dc: Ben.#0357</li>
+                                                 <li><strong>Dependencies:</strong> None</li>
+                        <li><strong>Tags:</strong> <span class="tags">#gun, #lewis, #psisyn, #wrap, props, weapons</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/5ABD0CB57F7E9EB1" target="_blank">RIS Laser Attachments</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> This mod requires compatible weapons! Prototype laser and flashlight mod built on top of Attachments Compatibility</li>
+                        <li><strong>Description:</strong> Framework for weapon-mounted for lasers and flashlights. Radial menu included. Includes a few optics. The items will be in the arsenal. For modders wishing to integrate: you "only" need to setup attachments of required class on your weapon, and set appropriate angles (for the sides, etc).</li>
+                                                 <li><strong>Dependencies:</strong> None</li>
+                        <li><strong>Tags:</strong> <span class="tags">attachment, flashlight, laser, ris, weapons</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/59651354B2904BA6" target="_blank">BetterHitsEffects 3.0 Alpha</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Better Hits And Explosion Effects. ALPHA VERSION. WIP Affects all effects of hits and explosions.</li>
+                        <li><strong>Description:</strong> Better Hits, Explosion And Particle Effects Be careful, do not use two mods at the same time that change the same effects and hit particles and explosions. Example: Mods "BetterHitsEffects" and "Effects" - do not use them at the same time! //v3.0.0 Alpha version of improved BHE with surface-based effects for explosions. ALPHA v2.9.2 Quick-hand update to 1.0 Arma Refoger,  some fetures are disabled, but mainly - working. Will be improving mod soon, wait for different explosion effects for different surfaces. Affects all effects of hits and explosions. If you want to support my work - boosty.to/suvwar Changelog: //v2.9.12 RPG trail improved, minor changes //v2.9.11 Removed unused files //v2.9.10 Added compability with BMP-3 and M2 Bradley mods (30/25mm HE hit effects) YOU NEED TO FULLY  RE-INSTALL BetterHitsEffects addon to make this work. Improvments //v2.9.X Test build //v2.9.8 Some hit effects improvments, to VOG and grenades added more physical dust. Optimization //v2.9.7 VOG and RPG effects are imroved, optimization //v2.9.6 Hit effects improved and optimized //v2.9.5 Explosion effects fixed, sorry for this mistake //v2.9.4 Description update //v2.9.3 Fixed after-explosion flames and moved into new Arma Reforger decal system //v2.9.2 Quick-hand update to 1.0 Arma Refoger,  some fetures are disabled, but mainly - working. Will be improving mod soon, wait for different explosion effects for different surfaces. //v2.9.1 Tweaks //v2.9.0 RPG 7 effect fix, some improvments //v2.8.9 Okay its gone //v2.8.8 [DELETED] Appeared! Be alert and ready, it's everywhere. //v2.8.7 Tweaks/improvments (Metal hit effect esp) //v2.8.6 Dynamic light clip LV <, improvments //v2.8.5 Improvments, optimize //v2.8.4 Some fixes, improvments. On the way to update all effects to new version //v2.8.3 Hit effects tweaks, rpg trail fix. Waiting forArma particles update merge from exp branch, will be much better :) //v2.8.2 Decals for brick impacts improved, tweaks //v2.8.1 New m67 explosion effect (now they are diffirient for m67 and rgd5), new logic system for explosion decals + decals improvment, new decal for brick impact, improvments //v2.8.0 Decals for concrete and brick are bigger now //v2.7.9 Optimization, improvments //v2.7.8 Reduced Lens Flares //v2.7.7 Improvments //v2.7.6 Improved vehicles explosion, some tweaks and improvments //v2.7.5 Smoke of hits on hard surfaces are now more random //v2.7.4 Бебра added //v2.7.3 Optimization, tweaks, improvments, smoke grenades rework //v2.7.2 Tweaks //v2.7.1 Tweaks //v2.7.0 Optimization - ~1,5 times less particles count without visually changes. Minor changes. Lens flares changed //v2.6.8 Improvments //v2.6.7 Improved dynamic lights //v2.6.6 Sligltly improved performance (fps), expect more //v2.6.5 Added Squad-Like sparks particles (more red and bloom) //v2.6.4 More improvments //v2.6.3 Some improvments //v2.6.2 improvments, espescially rpg shot effects //v2.6.1 Great improvments //v2.6.0 Some fixes and improvments //v2.5.9 Postflame/smoke added for all explosions //v2.5.8 Sparks reduce, some improvments //v2.5.7 Improvments //v2.5.6 Improvments //v2.5.5 Improvments //v2.5.4 merge version from experimental to regular arma branch //v2.5.3 Big improvments of explosions and rpg 7 shoot effects //v2.5.2 Impovments //v2.5.1 Impovments //v2.5.0 Hotfix //v2.4.0 Improvmets //v2.3.9 Better decals for concrete and metal (Note, there some bug when sometimes normal map doesnt work for decals, so expect sometimes it will no work) //v 2.3.8 added wind affect, so now smoke from hits doesnt stay at one place //v 2.3.7 Improvments //v 2.3.6 Size fix //v 2.3.5 Fixes //v 2.3.4 fixes //v 2.3.3 Hotfix //v2.3.2 Decals and hit effects improvment. // v2.3.1 Improvements to the effects of transport, explosions and some hits // v2.3.0 Improved the effects of car explosions, the effects of hits on bricks and concrete and decals hitting them. // v2.2.0 Removed the visual effect of shrapnel from explosions, I created a separate mod "Shrapnel", which adds physical and realistic fragments from grenades and explosions. // v2.1.9 Some improvments 4 // v2.1.8 Some improvments 3 // v2.1.7 Some improvments 2 // v2.1.6 Some improvments // v2.1.5 Improved BTR70 explosion effect // v2.1.4 Improved smoke grenades effects //v 2.1.3 Improved vehicles explosions, added ammunition cookoff sound and effect. Improved trail from rpg //v 2.1.2 improved the effects of tires, explosions and smoke from vehicles //v 2.1.1 Removed casing effects, made a separate mod "BetterCasings" //v 2.1.0 Testing, need feedback in discord. Casings are 3d and physical now, (no performance issues). Improved blood effects //v 2.0.2 Work on explosions has been carried out, shock wave has been added</li>
+                                                 <li><strong>Dependencies:</strong> None</li>
+                        <li><strong>Tags:</strong> <span class="tags">blastcore, effect, effects, hit, particle, weapons</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/62128C10AA9AA6EC" target="_blank">Modern Russians RHS</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Simple faction overhaul, changes vanilla ussr clothing to RHS russians. Mainly meant to be used on conflict PVE gamemodes. .gg/tacticalbarbies All credits to RHS: Status Quo team.</li>
+                        <li><strong>Description:</strong> I havent changed every prefab as most pve mods only use handful of them, if some prefab is missing let me know and i can edit them. gg./tacticalbarbies This mod is licensed under Arma Public</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/595F2BF2F44836FB-RHS-StatusQuo" target="_blank">RHS - Status Quo</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">characters</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/61C2509A023211FE" target="_blank">M4 MAAWS</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> 84mm Carl Gustaf also known as the M4 MAAWS. Comes with HEAT 551, HEDP 502, HE 441D, SMOKE 469C. WIP!</li>
+                        <li><strong>Description:</strong> This mod is VERY WIP Assistance and moral support: Doolittle and Kanthier M4 MAAWS model from giancarlo-biscotto on CGTrader https://www.cgtrader.com/designers/giancarlo-biscotti , model edits by me FCS 4x30 600 model and textures by Akinaro on CGTrader https://www.cgtrader.com/designers/Akinaro Changelog: 0.1.4 - Added scope, scope is ranged for the HEAT 551 round, gave the rounds a new texture. Doolittle did most of the scope script wise. PFCD placed back on the mount. Redid tube textures. 0.1.5 - Added scope to arsenal. 0.1.6 - Aligned scope picture, made reticle less blurry, fixed FOV discrepancy between 2d/PIP 0.1.9 - Added ranging for HEDP 502 and for HE 441/Smoke 469C (Denoted by XX2 and XX1 in the ranges on the scope). HE round is very deadly, do not recommend using it within 100 meters. Adjusted the HEAT round's spalling, added solid penetrator for the HEDP (technically has 150mm RHA). 0.2.0 - Added Textures, Fixed PIP and 2D Scope views. FInally got over my HE Damage schizo, warning very deadly! Fixed inventory views, added texture for the HE 441D, SMOKE 469C coming soon™ 0.2.3 - Fixed HE, little less deadly but 99.9% more consistent. Cigarrette rounds are now textured. Did something to make bacon editor work.. maybe idk I don't use that mod. 0.3.0 - Added M3 Scope without eye cup (love HDR issues), New M4/M3E1 model, New scopes: Aimpoint FCS-13RE, Hensoldt FCS 4x30 600. These feature a red dot, and will hopefully feature a laser range finder in the future. 0.3.1 - The warcrime update! Lots of small changes, retextured a lot of ammo. Redid a lot of ammo now that I good math now. Added two new shells, ADM 401B and ADM 401, these shells shoot out a lot of projectiles, the 401 is flechette, 401B is ball bearings. ADM 401 may be removed if it crashes servers. We will find out soon! Oh and localization and attachment points made somewhat easier to use. 0.3.2 - Sorry but the ADMs were nerfed penetration wise. Works great on our own server though :D 0.3.3 - New Carl Gustav model from giancarlo-biscotto on CGTrader, Removed unrealistic flare effect on all non-rocket assisted rounds. Cleaned up the rounds (dirt and grime). Added initial IK animations, reload and inspect animations potentially in the next 2 years. AFCS-13RE was replaced by the one provided with giancarlo's model. Not previously mentioned, but the Smoke 469C rounds now produce a new smoke effect. 0.3.7 - Return the current MAAWS to it's original animations and sounds, there is a test MAAWs that has them now. Not sure when I will continue working on the sounds. Todo -  Laser Rangefinger(Soon??™), Reload/Inspect Animations Soon™</li>
+                                                 <li><strong>Dependencies:</strong> None</li>
+                        <li><strong>Tags:</strong> <span class="tags">launcher, m3, m3e1, m4, maaws, weapons</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/5CA125536EE7430A" target="_blank">M110 DMR</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> M110 in two color variations, with optics and suppressors</li>
+                        <li><strong>Description:</strong> * Thanks to Plague eG for help with the assets! Much appreciated. 1.0.8: compatibility update, deploy fix 1.0.7: compatibility update 1.0.6: casings now 3d 1.0.5: enabled inspection widgets 1.0.4: ironsights removed from sights switching 1.0.3: added some wear to the models 1.0.2: "Fixing" strings in actions for mags. Slight brightness increase for tan variant. 1.0.1: Fixed bad weights for front irons. Rear ironsight has a 25% wider hole now. Optics slot moved a little bit forward.</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/5AB301290317994A-Suppressors" target="_blank">Suppressors</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/5ABD0CB57F7E9EB1-RISLaserAttachments" target="_blank">RIS Laser Attachments</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">bacon, dmr, m110, rifle, sniper, weapons</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/5CA8F34E77DD532C" target="_blank">KOMRAD-12 Shotgun</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> Testing auto shotguns. Available in all arsenals.</li>
+                        <li><strong>Description:</strong> 3 ammo types: - Buckshot: 8 pellets, spread, low penetration, effective <25m - HE-T: medium direct damage, low explosive area damage (2m radius) - SLUG: single projectile, extreme damage, no penetration Suppressor Shotgun shell model: sketchfab.com/kamsz KOMRAD-12 model: sketchfab.com/dsamuta Suppressor: sketchfab.com/socksthecat 1.0.10: Fix for suppressed sound 1.0.9: Added drum mag for buckshot, rate of fire increased, some more FX 1.0.8: compatibility update 1.0.7: suppressor no longer disables cycling sights, bottom ris attachment slot now shows up in inventory inspection 1.0.6: rate of fire 300 -> 400, HE damage radius 2.5 -> 3, ironsights excluded from sights switching 1.0.5: rate of fire 180 -> 300 1.0.4: lower spread for HE, +1 damage for HE 1.0.3: removing unconsciousness that was enabled for testing only 1.0.2: hotfix for weapon name in action text 1.0.1: added LODs for the magazine and one more LOD for the stock, HE-T rounds now slower and more visible, HE-T damage tweaks, added COM to shotgun, HE-T sound tweaks</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/5AB301290317994A-Suppressors" target="_blank">Suppressors</a></li>
+                                <li><a href="https://reforger.armaplatform.com/workshop/5ABD0CB57F7E9EB1-RISLaserAttachments" target="_blank">RIS Laser Attachments</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">auto, bacon, komrad, saiga, shotgun, weapons</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod-box">
+                <div class="mod-header"><a href="https://reforger.armaplatform.com/workshop/606D03292879EF5B" target="_blank">Scenario Reload Menu</a></div>
+                <div class="mod-details">
+                    <ul>
+                        <li><strong>Summary:</strong> The Scenario Reload Menu lets admins load scenarios without restarting the server and allows for automatic mission rotation.</li>
+                        <li><strong>Description:</strong> The Scenario Reload Menu lets Server Admins load scenarios without disconnecting players. For ease of use, the feature is integrated into bacons Server Admin Tools UI. There is also a feature for automatic mission rotation: https://docs.google.com/document/d/1MSWFsCE7bu9cRvsVj8gB2KzSA85M92Y2e3w6m--Qao4 Support: "Scenario Reload Menu" Showcase Thread on the ARMA Discord https://discord.com/channels/105462288051380224/1199033803247718490</li>
+                                                 <li><strong>Dependencies:</strong>
+                            <ul class="dependencies">
+                                <li><a href="https://reforger.armaplatform.com/workshop/5AAAC70D754245DD-ServerAdminTools" target="_blank">Server Admin Tools</a></li>
+                            </ul>
+                        <li><strong>Tags:</strong> <span class="tags">admin, misc, server, tool, tools</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+                </div> <!-- End mod-container -->
+
+
+
     </main>
     <script src="static/js/script.js"></script>
     <script src="static/js/mobile.js"></script>
